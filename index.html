@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>有趣的CSS</title>
+	<link rel="preconnect" href="https://fonts.proxy.ustclug.org">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.proxy.ustclug.org/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap"" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/funcss.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="head-title">有趣的CSS</div>
+    </header>
+    <main>
+      <section>
+				<p class="p-title">按钮 / 链接</p>
+				<ul>
+					<li v-for="button in buttons" :key="button" class="item-box">
+						<div class="item-main">
+							<div class="item-cont">
+								<span class="c-style" v-html="button.style"></span>
+								<span v-html="button.code"></span>
+							</div>
+							<a class="see-code" href="javascript:;">查看代码</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<p class="p-title">输入框</p>
+				<ul>
+					<li v-for="input in inputs" :key="input" class="item-box">
+						<div class="item-cont">
+							{{input.title}}
+						</div>
+					</li>
+				</ul>
+			</section>
+    </main>
+		<footer>
+			<section>
+				<span>funcss ©️ 2020</span>
+				<a class="text-link" target="_blank" href="https://beian.miit.gov.cn/">冀ICP备19017590号-1</a>
+			</section>
+			<section>
+				<a class="text-link" href="javascript:;">喜欢</a>
+				<a class="text-link" href="javascript:;">关于</a>
+				<a class="text-link" href="https://whtool.liujueyi.cn/" target="_blank">WHTOOL</a>
+			</section>
+		</footer>
+  </div>
+  <script src="https://unpkg.com/vue@3.2.22/dist/vue.global.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
