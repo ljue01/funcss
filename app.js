@@ -26,8 +26,13 @@ const app = Vue.createApp({
 				return value.replace(/<style>/gi, "").replace(/<\/style>/gi, "");
 			};
 		},
+	},
+	components: {
+		"my-footer": {
+			template: "#my-footer"
+		}
 	}
 })
 
-app.mount('#app')
+app.mount('#app');
 
