@@ -2,7 +2,7 @@
 // v0.0.1
 // 2020.12.01 p.m. 9:44
 
-const app = Vue.createApp({
+const app = Vue.createApp({	
   data() {
     return {
       buttons: [],
@@ -19,7 +19,15 @@ const app = Vue.createApp({
 		})).catch(error => {
 			console.log(error);
 		});
+	},
+	computed: {
+		filteredHtml() {
+			return function(value) {
+				return value.replace(/<style>/gi, "").replace(/<\/style>/gi, "");
+			};
+		},
 	}
 })
 
 app.mount('#app')
+

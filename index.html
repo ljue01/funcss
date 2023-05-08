@@ -20,11 +20,17 @@
 				<ul>
 					<li v-for="button in buttons" :key="button" class="item-box">
 						<div class="item-main">
+							<div class="">
+								<span>{{ button.title }}</span>
+								<span>by {{button.coder}}</span>
+							</div>
 							<div class="item-cont">
 								<span class="c-style" v-html="button.style"></span>
 								<span v-html="button.code"></span>
 							</div>
 							<a class="see-code" href="javascript:;">查看代码</a>
+							<pre v-html="filteredHtml(button.style)"></pre>
+							<!-- <pre>{{ filteredHtml(button.style) }}</pre> -->
 						</div>
 					</li>
 				</ul>
