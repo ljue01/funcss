@@ -44,6 +44,14 @@ ul,li{
 .f14{
 	font-size: 0.875rem;
 }
+/* dev code*/
+pre{
+	position: relative;
+	width: 100%;
+	line-height: 1.5;
+	white-space: pre;
+}
+
 
 /* transiton */
 .v-enter-active,.v-leave-active,.v-enter-active .pop-main,.v-leave-active .pop-main{

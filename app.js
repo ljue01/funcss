@@ -5,18 +5,14 @@
 const app = Vue.createApp({	
   data() {
     return {
-      buttons: [],
-			inputs: []
+			show: false,
+      items: []
     }
   },
   mounted() {
-		axios.all([
-			axios.get('data/buttons.json'),
-			axios.get('data/inputs.json')
-		]).then(axios.spread((post1, post2) => {
-			this.buttons = post1.data;
-			this.inputs = post2.data;
-		})).catch(error => {
+		axios.get('data/data.json').then(response => {
+			this.items = response.data;
+		}).catch(error => {
 			console.log(error);
 		});
 	},
@@ -27,12 +23,17 @@ const app = Vue.createApp({
 			};
 		},
 	},
-	components: {
-		"my-footer": {
-			template: "#my-footer"
+  methods: {
+		// 显示弹层
+		showPopup(item){
+			this.popupItem = item;
+			this.show = true;
+		},
+		// 隐藏弹层
+		hidePopup(){
+			this.popupItem = null;
+			this.show = false;
 		}
-	}
+  }
 })
-
-app.mount('#app');
-
+app.mount('#app')

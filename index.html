@@ -16,42 +16,74 @@
     </header>
     <main>
       <section>
-				<p class="p-title">按钮 / 链接</p>
+				<div class="tag">
+					<p class="p-title tag-sel">全部</p>
+					<p class="p-title">按钮 / 链接</p>
+					<p class="p-title">输入框</p>
+					<p class="p-title">加载效果</p>
+				</div>
 				<ul>
-					<li v-for="button in buttons" :key="button" class="item-box">
+					<li v-for="item in items" :key="item" class="item-box">
 						<div class="item-main">
-							<div class="">
-								<span>{{ button.title }}</span>
-								<span>by {{button.coder}}</span>
-							</div>
 							<div class="item-cont">
-								<span class="c-style" v-html="button.style"></span>
-								<span v-html="button.code"></span>
+								<span class="c-style" v-html="item.style"></span>
+								<span v-html="item.code"></span>
 							</div>
-							<a class="see-code" href="javascript:;">查看代码</a>
-							<pre v-html="filteredHtml(button.style)"></pre>
-							<!-- <pre>{{ filteredHtml(button.style) }}</pre> -->
-						</div>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<p class="p-title">输入框</p>
-				<ul>
-					<li v-for="input in inputs" :key="input" class="item-box">
-						<div class="item-cont">
-							{{input.title}}
+							<a class="see-code" href="javascript:;" @click="showPopup(item)">查看代码</a>
 						</div>
 					</li>
 				</ul>
 			</section>
     </main>
-		<my-footer></my-footer>
+		<footer>
+			<section>
+				<span>funcss ©️ 2020</span>
+				<a class="text-link" target="_blank" href="https://beian.miit.gov.cn/">冀ICP备19017590号-1</a>
+			</section>
+			<section>
+				<a class="text-link" href="javascript:;">喜欢</a>
+				<a class="text-link" href="javascript:;">关于</a>
+				<a class="text-link" href="https://whtool.liujueyi.cn/" target="_blank">WHTOOL</a>
+			</section>
+		</footer>
+		<transition :duration="400">
+					<div v-if="show" class="pop-cont"  @click="hidePopup">
+						<div class="pop-main" @click.stop>
+							<div class="pop-left">
+								<div class="popup-box">
+									<div class="popup-title flex">
+										<div>鼠标悬浮效果</div>
+										<div>by {{popupItem.coder}}</div>
+									</div>
+									<div class="pop-eg">
+										<span v-html="popupItem.style"></span>
+										<span v-html="popupItem.code"></span>
+									</div>
+								</div>
+								<div class="popup-box m-t-40">
+									<div class="popup-title flex">
+										<div>HTML</div>
+										<a class="copy-btn" href="javascript:;">复制代码</a>
+									</div>
+									<div class="f14">{{popupItem.code}}</div>
+								</div>
+							</div>
+							<div class="pop-right">
+								<div class="popup-box">
+									<div class="popup-title flex">
+										<div>CSS</div>
+										<a class="copy-btn" href="javascript:;">复制代码</a>
+									</div>
+									<div class="f14" v-text="filteredHtml(popupItem.style)"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</transition>
   </div>
   <script src="https://unpkg.com/vue@3.2.22/dist/vue.global.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="./components/MyFooter.vue"></script>
 	<script src="app.js"></script>
 </body>
 </html>
