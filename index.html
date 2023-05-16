@@ -17,13 +17,13 @@
     <main>
       <section>
 				<div class="tag">
-					<p class="p-title tag-sel">全部</p>
-					<p class="p-title">按钮 / 链接</p>
-					<p class="p-title">输入框</p>
-					<p class="p-title">加载效果</p>
+					<p class="p-title" :class="{'tag-sel': selectedType === ''}" @click="selectedType = ''">全部</p>
+					<p class="p-title" :class="{'tag-sel': selectedType === 0}" @click="selectedType = 0">按钮 / 链接</p>
+					<p class="p-title" :class="{'tag-sel': selectedType === 1}" @click="selectedType = 1">输入框</p>
+					<p class="p-title" :class="{'tag-sel': selectedType === 2}" @click="selectedType = 2">加载效果</p>
 				</div>
 				<ul>
-					<li v-for="item in items" :key="item" class="item-box">
+					<li v-for="item in filteredItems" :key="item.id" class="item-box">
 						<div class="item-main">
 							<div class="item-cont">
 								<span class="c-style" v-html="item.style"></span>
@@ -65,7 +65,10 @@
 										<div>HTML</div>
 										<a class="copy-btn" href="javascript:;">复制代码</a>
 									</div>
-									<div class="f14">{{popupItem.code}}</div>
+									<div class="f14">
+										<pre class="html-box" v-text="filteredCode(popupItem.code)"></pre>
+									</div>
+									
 								</div>
 							</div>
 							<div class="pop-right">
@@ -74,7 +77,9 @@
 										<div>CSS</div>
 										<a class="copy-btn" href="javascript:;">复制代码</a>
 									</div>
-									<div class="f14" v-text="filteredHtml(popupItem.style)"></div>
+									<div class="f14">
+										<pre class="css-box" v-text="filteredCode(popupItem.style)"></pre>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -84,6 +89,7 @@
   <script src="https://unpkg.com/vue@3.2.22/dist/vue.global.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>

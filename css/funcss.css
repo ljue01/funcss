@@ -44,9 +44,22 @@ section{
 	width: 4px;
 	height: 4px;
 	display: block;
+	margin-top: 4px;
 	background-color: var(--main-color);
 	border-radius: 50%;
 	box-sizing: border-box;
+	animation: ani1 1.5s ease-in-out infinite;
+}
+@keyframes ani1 {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.4);
+	}
+	100%{
+		transform: scale(1);
+	}
 }
 .p-title:hover{
 	transform: scale(1.2);
@@ -180,4 +193,12 @@ footer>section>*{
 .copy-btn{
 	cursor: pointer;
 	color: #2552CD;
+}
+.html-box{
+	height: 120px;
+	overflow-y: auto;
+}
+.css-box{
+	height: 580px;
+	overflow-y: auto;
 }

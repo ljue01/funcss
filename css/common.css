@@ -46,6 +46,7 @@ ul,li{
 }
 /* dev code*/
 pre{
+	font-family: 'Noto Serif SC'!important;
 	position: relative;
 	width: 100%;
 	line-height: 1.5;
@@ -67,4 +68,23 @@ pre{
 	transform: translateY(56px);
   opacity: 0;
 }
+
+/* 滚动条整体样式 */
+::-webkit-scrollbar {
+  width: 3px; /* 设置滚动条宽度 */
+}
+
+/* 滚动条轨道样式 */
+::-webkit-scrollbar-track {
+  background-color: var(--second-color); /* 设置轨道背景颜色 */
+}
+
+/* 滚动条滑块样式 */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color); /* 设置滑块背景颜色 */
+  border-radius: 2px; /* 设置滑块圆角 */
+}
+
+
+
 	

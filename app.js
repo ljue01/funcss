@@ -5,6 +5,7 @@
 const app = Vue.createApp({	
   data() {
     return {
+			selectedType: '',
 			show: false,
       items: []
     }
@@ -17,10 +18,23 @@ const app = Vue.createApp({
 		});
 	},
 	computed: {
-		filteredHtml() {
+		filteredCode() {
 			return function(value) {
-				return value.replace(/<style>/gi, "").replace(/<\/style>/gi, "");
+				return value.replace(/><\//g, '>\n</')
+				.replace(/}/g, '}\n')
+				.replace(/></g, '>\n<')
+				.replace(/\{/g, '{\n  ')
+				.replace(/;/g, ';\n  ')
+				.replace(/<style>/gi, '')
+				.replace(/<\/style>/gi, '')
+				.replace(/'/g, '"')
+				.replace(/  }/g, '}');
 			};
+		},
+		filteredItems() {
+			return this.selectedType === ''
+				? this.items
+				: this.items.filter(item => item.type === parseInt(this.selectedType))
 		},
 	},
   methods: {
