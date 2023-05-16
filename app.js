@@ -7,6 +7,8 @@ const app = Vue.createApp({
     return {
 			selectedType: '',
 			show: false,
+			htmlTip: false,
+			cssTip: false,
       items: []
     }
   },
@@ -47,6 +49,48 @@ const app = Vue.createApp({
 		hidePopup(){
 			this.popupItem = null;
 			this.show = false;
+		},
+		// 复制html代码
+		copyHtml() {
+		  const htmlBox = document.querySelector('.html-box');
+		  const textToCopy = htmlBox.innerText;
+			
+		  const tempInput = document.createElement('textarea');
+		  tempInput.value = textToCopy;
+			
+		  document.body.appendChild(tempInput);
+		  tempInput.select();
+		  document.execCommand('copy');
+		  document.body.removeChild(tempInput);
+			
+		  console.log('复制成功');
+			
+			this.htmlTip = true;
+			setTimeout(() => {
+				this.htmlTip = false;
+			}, 2000); // 2秒后隐藏提示信息
+			
+		},
+		// 复制css代码
+		copyCss() {
+		  const htmlBox = document.querySelector('.css-box');
+		  const textToCopy = htmlBox.innerText;
+			
+		  const tempInput = document.createElement('textarea');
+		  tempInput.value = textToCopy;
+			
+		  document.body.appendChild(tempInput);
+		  tempInput.select();
+		  document.execCommand('copy');
+		  document.body.removeChild(tempInput);
+			
+		  console.log('复制成功');
+			
+			this.cssTip = true;
+			setTimeout(() => {
+				this.cssTip = false;
+			}, 2000); // 2秒后隐藏提示信息
+			
 		}
   }
 })

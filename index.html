@@ -63,23 +63,28 @@
 								<div class="popup-box m-t-40">
 									<div class="popup-title flex">
 										<div>HTML</div>
-										<a class="copy-btn" href="javascript:;">复制代码</a>
+										<a class="copy-btn" href="javascript:;" @click="copyHtml">复制代码</a>
 									</div>
 									<div class="f14">
 										<pre class="html-box" v-text="filteredCode(popupItem.code)"></pre>
 									</div>
-									
+									<transition>
+										<div v-if="htmlTip" class="tip">复制成功</div>
+									</transition>
 								</div>
 							</div>
 							<div class="pop-right">
 								<div class="popup-box">
 									<div class="popup-title flex">
 										<div>CSS</div>
-										<a class="copy-btn" href="javascript:;">复制代码</a>
+										<a class="copy-btn" href="javascript:;" @click="copyCss">复制代码</a>
 									</div>
 									<div class="f14">
 										<pre class="css-box" v-text="filteredCode(popupItem.style)"></pre>
 									</div>
+									<transition>
+										<div v-if="cssTip" class="tip">复制成功</div>
+									</transition>
 								</div>
 							</div>
 						</div>
@@ -87,9 +92,8 @@
 				</transition>
   </div>
   <script src="https://unpkg.com/vue@3.2.22/dist/vue.global.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"></script>
+	<!-- <script src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script> -->
 	<script src="app.js"></script>
 </body>
 </html>

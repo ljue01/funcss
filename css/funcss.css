@@ -202,3 +202,14 @@ footer>section>*{
 	height: 580px;
 	overflow-y: auto;
 }
+.tip{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: var(--main-color);
+	color: #ffffff;
+	font-size: 12px;
+	padding: 5px 10px;
+	border-radius: 6px;
+}
