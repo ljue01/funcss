@@ -38,6 +38,30 @@ const app = Vue.createApp({
 				? this.items
 				: this.items.filter(item => item.type === parseInt(this.selectedType))
 		},
+		LocationStyle() {
+			return function(value,cId){
+				// return value.replace(/<style>/g, '<style>'+'#'+cId+' ')
+				// .replace(/}/g, '}#'+cId+' ')
+				// .replace(/\}#*<\//g, '}<\}<\/');
+				
+				// 使用正则表达式进行替换
+				// const regex = /(?<=<style>).+?(?=<\/style>)/gs;
+				// const matches = value.match(regex);
+				// if (matches) {
+				// 	const styleContent = matches[0];
+				// 	const modifiedStyleContent = styleContent.replace(/(\s*)([^{]+){/g, `$1#${cId} $2{`);
+				// 	return value.replace(styleContent, modifiedStyleContent);
+				// }
+				// return value;
+				
+				// 使用正则表达式进行替换
+				const regex = /(<style>)([\s\S]+?)(<\/style>)/g;
+				return value.replace(regex, (match, startTag, styleContent, endTag) => {
+					const modifiedStyleContent = styleContent.replace(/(\s*)([^{]+){/g, `$1#${cId} $2{`);
+					return `${startTag}${modifiedStyleContent}${endTag}`;
+				});
+			}
+		}
 	},
   methods: {
 		// 显示弹层

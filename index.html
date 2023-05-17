@@ -20,14 +20,14 @@
 					<p class="p-title" :class="{'tag-sel': selectedType === ''}" @click="selectedType = ''">全部</p>
 					<p class="p-title" :class="{'tag-sel': selectedType === 0}" @click="selectedType = 0">按钮 / 链接</p>
 					<p class="p-title" :class="{'tag-sel': selectedType === 1}" @click="selectedType = 1">输入框</p>
-					<p class="p-title" :class="{'tag-sel': selectedType === 2}" @click="selectedType = 2">加载效果</p>
+					<p class="p-title" :class="{'tag-sel': selectedType === 2}" @click="selectedType = 2">加载中</p>
 				</div>
 				<ul>
 					<li v-for="item in filteredItems" :key="item.id" class="item-box">
 						<div class="item-main">
 							<div class="item-cont">
-								<span class="c-style" v-html="item.style"></span>
-								<span v-html="item.code"></span>
+								<span class="c-style" v-html="LocationStyle(item.style,item.id)"></span>
+								<span :id="'c'+item.id" v-html="item.code"></span>
 							</div>
 							<a class="see-code" href="javascript:;" @click="showPopup(item)">查看代码</a>
 						</div>
