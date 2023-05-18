@@ -190,6 +190,11 @@ footer>section>*{
 	justify-content: center;
 	align-items: center;
 }
+.item-cont >span:nth-child(2),.pop-eg > span:nth-child(2){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .copy-btn{
 	cursor: pointer;
 	color: #2552CD;

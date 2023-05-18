@@ -69,17 +69,16 @@ pre{
   opacity: 0;
 }
 
-/* 滚动条整体样式 */
+/* 滚动条样式 */
 ::-webkit-scrollbar {
   width: 3px; /* 设置滚动条宽度 */
+	height: 3px;
 }
 
-/* 滚动条轨道样式 */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track,::-webkit-scrollbar-corner {
   background-color: var(--second-color); /* 设置轨道背景颜色 */
 }
 
-/* 滚动条滑块样式 */
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color); /* 设置滑块背景颜色 */
   border-radius: 2px; /* 设置滑块圆角 */

@@ -1,15 +1,63 @@
 [
+	{
+		"type": 2,
+	  "id": 1,
+	  "title": "好看的呼吸灯效果",
+		"style": "<style>span{width:20px;height:20px;margin:10px;border-radius:50%;display:block;}.red{animation:just1 2s ease-in-out infinite alternate;}.green{animation:just2 3s ease-in-out infinite alternate;}.blue{animation:just3 4s ease-in-out infinite alternate;}@keyframes just1{0%{border:5px solid rgba(255,0,0,0);box-shadow:0 0 0 rgba(255,0,0,0),0 0 0 rgba(255,0,0,0) inset;}100%{border:5px solid rgba(255,0,0,1);box-shadow:0 0 10px rgba(255,0,0,0.7),0 0 4px rgba(255,0,0,0.5) inset;}}@keyframes just2{0%{border:5px solid rgba(0,255,0,0);box-shadow:0 0 0 rgba(0,255,0,0),0 0 0 rgba(0,255,0,0) inset;}100%{border:5px solid rgba(0,255,0,1);box-shadow:0 0 10px rgba(0,255,0,0.7),0 0 4px rgba(0,255,0,0.5) inset;}}@keyframes just3{0%{border:5px solid rgba(0,0,255,0);box-shadow:0 0 0 rgba(0,0,255,0),0 0 0 rgba(0,0,255,0) inset;}100%{border:5px solid rgba(0,0,255,1);box-shadow:0 0 10px rgba(0,0,255,0.7),0 0 4px rgba(0,0,255,0.5) inset;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<span class='red'></span><span class='green'></span><span class='blue'></span>"
+	},
+	{
+		"type": 0,
+	  "id": 2,
+	  "title": "鼠标悬浮线条动态变化",
+		"style": "<style>a{text-decoration:none;color:green;cursor:pointer;font-size:34px;font-weight:bold;}.a-line{width:0;height:2px;display:block;margin-bottom:6px;background-color:green;}a:hover .a-line{width:100%;animation:move .5s ease;}@keyframes move{from{width:0;}to{width:100%;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<a><span class='a-line'></span>Design</a>"
+	},
+	{
+		"type": 2,
+	  "id": 3,
+	  "title": "圆点水波纹效果",
+		"style": "<style>.dot{width:32px;height:32px;display:block;position:relative;border-radius:50%;background-color:blue;z-index:1;}.dot::after{width:100%;height:100%;content:'';border-radius:50%;position:absolute;top:0;left:0;z-index:-2;background-color:blue;animation:dot-play 4s linear 400ms infinite;}.dot::before{width:100%;height:100%;content:'';border-radius:50%;position:absolute;top:0;left:0;z-index:-1;background-color:blue;animation:dot-play 4s linear 200ms infinite;animation-delay:2s;}@keyframes dot-play{from{transform:scale(1);opacity:.2;}to{transform:scale(4);opacity:0;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='dot'></label>"
+	},
+	{
+		"type": 3,
+	  "id": 4,
+	  "title": "第一个字符串生成文字图标",
+		"style": "<style>ul{max-width:300px;}ul li{width:100%;color:#152239;font-size:14px;line-height:32px;margin:10px 0;float:left;}ul li span{width:32px;height:32px;line-height:31px;color:#1E47ED;font-size:14px;font-weight:700;text-indent:9px;border-radius:50%;display:block;float:left;overflow:hidden;background-color:#eaeaea;letter-spacing:20px;margin-right:10px;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<ul><li><span>第一个字符串生成文字图标</span>第一个字符串生成文字图标</li><li><span>用CSS可以做什么？</span>用CSS可以做什么？</li><li><span>前端的致命诱惑</span>前端的致命诱惑</li></ul>"
+	},
   {
 		"type": 0,
-    "id": 1,
+    "id": 5,
     "title": "按钮文字上下滑动",
 		"style": "<style>button{width:110px;height:42px;color:#ffffff;background-color:#457356;border:none;border-radius:4px;cursor:pointer;transition:all 0.3s linear;position:relative;overflow:hidden;}.defalut,.hover{width:100%;height:100%;line-height:42px;letter-spacing:2px;display:block;transition:all 0.3s ease-in-out;cursor:pointer;}.hover{position:absolute;left:0;top:100%;}button:hover .defalut{transform:translateY(-100%);}button:hover .hover{top:0;}</style>",
     "coder": "Just. Liu",
     "code": "<button><span class='defalut'>按钮 / 链接</span><span class='hover'>点我吧</span></button>"
   },
 	{
+		"type": 2,
+	  "id": 6,
+	  "title": "css3 loading",
+		"style": "<style>.loading{width:32px;height:32px;border:4px solid rgba(0,0,0,0.2);border-top-color:#000000;border-radius:50%;animation:loading 1s linear infinite;}@keyframes loading{to{transform:rotate(360deg);}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='loading'></div>"
+	},
+	{
+		"type": 2,
+	  "id": 7,
+	  "title": "动态的毛玻璃背景",
+		"style": "<style>.box{width:400px;height:300px;position:relative;}.round-box{width:100%;height:100%;border-radius:10px;position:absolute;overflow:hidden;}.round:first-child{width:120px;height:120px;border-radius:50%;border:30px solid #7BF52A;box-sizing:border-box;position:absolute;top:-38px;left:-40px;animation:move-y 3.5s linear infinite;}.round:last-child{width:120px;height:120px;border-radius:50%;background:linear-gradient(136deg,#7BF52A 0%,#FFCD56 100%);box-sizing:border-box;position:absolute;bottom:-30px;right:-30px;animation:move-y 5s ease-in-out infinite;}.bg-filter{width:100%;height:100%;background:rgba(255,255,255,.05);box-shadow:0 2px 6px rgba(0,0,0,0.1);backdrop-filter:blur(6px);border-radius:10px;box-sizing:border-box;position:absolute;}@keyframes move-y{0%{transform:translateY(0);}50%{transform:translateY(-16px);}100%{transform:translateY(0);}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='box'><div class='round-box'><div class='round'></div><div class='round'></div></div><div class='bg-filter'></div></div>"
+	},
+	{
 		"type": 0,
-	  "id": 4,
+	  "id": 8,
 	  "title": "简约的动态关注按钮",
 		"style": "<style>button{width:140px;height:46px;font-size:16px;font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#333;background-color:transparent;border:none;position:relative;z-index:1;box-sizing:border-box;transition:all 0.4s ease-in-out;}button:before{content:'';width:4px;height:inherit;position:absolute;top:0;left:0;z-index:-5;background-color:#333;transition:all 0.4s ease-in-out;}button:hover{cursor:pointer;color:#fff;}button:hover:before{width:100%;border-radius:6px;}</style>",
 	  "coder": "Just. Liu",

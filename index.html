@@ -21,6 +21,7 @@
 					<p class="p-title" :class="{'tag-sel': selectedType === 0}" @click="selectedType = 0">按钮 / 链接</p>
 					<p class="p-title" :class="{'tag-sel': selectedType === 1}" @click="selectedType = 1">输入框</p>
 					<p class="p-title" :class="{'tag-sel': selectedType === 2}" @click="selectedType = 2">加载中</p>
+					<p class="p-title" :class="{'tag-sel': selectedType === 3}" @click="selectedType = 3">文字</p>
 				</div>
 				<ul>
 					<li v-for="item in filteredItems" :key="item.id" class="item-box">

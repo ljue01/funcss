@@ -42,7 +42,12 @@ const app = Vue.createApp({
 			return function(value,cId){
 				return value.replace(/<style>/g, '<style>'+'.c'+cId+' ')
 				.replace(/}/g, '}.c'+cId+' ')
-				.replace(/}[^}]*<\/style>/g, '}</style>');
+				.replace(/}[^}]*<\/style>/g, '}</style>')
+				.replace(/}.c[^}]*@/g, '}@')
+				.replace(/}.c[^}]*\s}/g, '}}')
+				.replace(/}.c[^}]*\s(100%|0%|50%|75%|to|from)/g, '}$1');
+				
+				//}.c2 to{
 			}
 		}
 	},
