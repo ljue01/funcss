@@ -26,8 +26,8 @@
 					<li v-for="item in filteredItems" :key="item.id" class="item-box">
 						<div class="item-main">
 							<div class="item-cont">
-								<span class="c-style" v-html="LocationStyle(item.style,item.id)"></span>
-								<span :id="'c'+item.id" v-html="item.code"></span>
+								<span v-html="LocationStyle(item.style,item.id)"></span>
+								<span :class="'c'+item.id" v-html="item.code"></span>
 							</div>
 							<a class="see-code" href="javascript:;" @click="showPopup(item)">查看代码</a>
 						</div>
@@ -52,12 +52,12 @@
 							<div class="pop-left">
 								<div class="popup-box">
 									<div class="popup-title flex">
-										<div>鼠标悬浮效果</div>
+										<div>{{popupItem.title}}</div>
 										<div>by {{popupItem.coder}}</div>
 									</div>
 									<div class="pop-eg">
-										<span v-html="popupItem.style"></span>
-										<span v-html="popupItem.code"></span>
+										<span v-html="LocationStyle(popupItem.style,popupItem.id)"></span>
+										<span :class="'c'+popupItem.id" v-html="popupItem.code"></span>
 									</div>
 								</div>
 								<div class="popup-box m-t-40">
