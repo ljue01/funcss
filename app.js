@@ -40,14 +40,12 @@ const app = Vue.createApp({
 		},
 		LocationStyle() {
 			return function(value,cId){
-				return value.replace(/<style>/g, '<style>'+'.c'+cId+' ')
-				.replace(/}/g, '}.c'+cId+' ')
+				return value.replace(/<style>/g, '<style>'+'.cs'+cId+' ')
+				.replace(/}/g, '}.cs'+cId+' ')
 				.replace(/}[^}]*<\/style>/g, '}</style>')
-				.replace(/}.c[^}]*@/g, '}@')
-				.replace(/}.c[^}]*\s}/g, '}}')
-				.replace(/}.c[^}]*\s(100%|0%|50%|75%|to|from)/g, '}$1');
-				
-				//}.c2 to{
+				.replace(/}.cs[^}]*@/g, '}@')
+				.replace(/}.cs[^}]*\s}/g, '}}')
+				.replace(/}.cs\d+\s(100%|0%|50%|75%|to|from)/g, '}$1');
 			}
 		}
 	},

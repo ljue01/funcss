@@ -28,7 +28,7 @@
 						<div class="item-main">
 							<div class="item-cont">
 								<span v-html="LocationStyle(item.style,item.id)"></span>
-								<span :class="'c'+item.id" v-html="item.code"></span>
+								<span :class="'cs'+item.id" v-html="item.code"></span>
 							</div>
 							<a class="see-code" href="javascript:;" @click="showPopup(item)">查看代码</a>
 						</div>
@@ -58,7 +58,7 @@
 									</div>
 									<div class="pop-eg">
 										<span v-html="LocationStyle(popupItem.style,popupItem.id)"></span>
-										<span :class="'c'+popupItem.id" v-html="popupItem.code"></span>
+										<span :class="'cs'+popupItem.id" v-html="popupItem.code"></span>
 									</div>
 								</div>
 								<div class="popup-box m-t-40">
