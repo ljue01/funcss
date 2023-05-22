@@ -62,5 +62,13 @@
 		"style": "<style>button{width:140px;height:46px;font-size:16px;font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#333;background-color:transparent;border:none;position:relative;z-index:1;box-sizing:border-box;transition:all 0.4s ease-in-out;}button:before{content:'';width:4px;height:inherit;position:absolute;top:0;left:0;z-index:-5;background-color:#333;transition:all 0.4s ease-in-out;}button:hover{cursor:pointer;color:#fff;}button:hover:before{width:100%;border-radius:6px;}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<button>关注我</button>"
+	},
+	{
+		"type": 1,
+	  "id": 9,
+	  "title": "输入框选中交互动效",
+		"style": "<style>label{width:240px;position:relative;display:flex;align-items:center;}input{width:240px;height:32px;line-height:32px;padding:0 10px;border:2px solid transparent;border-bottom-color:#333;background-color:transparent;box-sizing:border-box;transition:all 0.3s;font-size:14px;color:#333;}span{position:absolute;font-size:14px;color:#999;left:12px;cursor:text;z-index:1;transition:all 0.3s;}label:hover input,input:focus{border-color:blue;border-radius:8px;}input:focus+span,input:valid+span{transform:translateY(-32px);}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label><input type='text' required=''><span>用户名</span></label>"
 	}
 ]

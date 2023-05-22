@@ -9,6 +9,7 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	outline-style: none;
 	border: none;
 	transition: 0.3s;
 }
