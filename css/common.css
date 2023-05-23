@@ -56,16 +56,16 @@ pre{
 
 
 /* transiton */
-.v-enter-active,.v-leave-active,.v-enter-active .pop-main,.v-leave-active .pop-main{
+.v-enter-active,.v-leave-active,.v-enter-active .pop-main,.v-leave-active .pop-main,.v-enter-active .pop-main-2,.v-leave-active .pop-main-2{
   transition: all 0.3s ease-in-out;
 }
 .v-enter-from,.v-leave-to{
   opacity: 0;
 }
-.v-enter-active .pop-main{
+.v-enter-active .pop-main,.v-enter-active .pop-main-2{
 	transition-delay: 0.1s;
 }
-.v-enter-from .pop-main,.v-leave-to .pop-main{
+.v-enter-from .pop-main,.v-leave-to .pop-main,.v-enter-from .pop-main-2,.v-leave-to .pop-main-2{
 	transform: translateY(56px);
   opacity: 0;
 }

@@ -138,7 +138,7 @@ footer>section>*{
 	cursor: pointer;
 	color: #2552CD;
 }
-.pop-cont{
+.pop-cont,.pop-cont-2{
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -151,7 +151,7 @@ footer>section>*{
 	display: flex;
 	align-items: center;
 }
-.pop-main{
+.pop-main,.pop-main-2{
 	width: 100%;
 	background-color: var(--second-color);
 	border-radius: var(--border-radius);
@@ -217,4 +217,30 @@ footer>section>*{
 	font-size: 12px;
 	padding: 5px 10px;
 	border-radius: 6px;
+}
+.about-box{
+	width: 480px;
+	font-size: 14px;
+}
+.about-box p{
+	margin-bottom: 24px;
+	line-height: 1.5;
+}
+.img-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0!important;
+}
+.font-b{
+	font-weight: 700;
+	margin-top: 8px;
+}
+.pop-cont-2{
+	padding: 0;
+	justify-content: center;
+}
+.pop-main-2{
+	width: auto;
 }

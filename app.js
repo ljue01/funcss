@@ -1,12 +1,13 @@
 // by Just. Liu
 // v0.0.1
-// 2020.12.01 p.m. 9:44
 
 const app = Vue.createApp({	
   data() {
     return {
 			selectedType: '',
 			show: false,
+			about: false,
+			like: false,
 			htmlTip: false,
 			cssTip: false,
       items: []
@@ -59,6 +60,22 @@ const app = Vue.createApp({
 		hidePopup(){
 			this.popupItem = null;
 			this.show = false;
+		},
+		// 显示about
+		showAbout(){
+			this.about = true;
+		},
+		// 隐藏about
+		hideAbout(){
+			this.about = false;
+		},
+		// 显示like
+		showLike(){
+			this.like = true;
+		},
+		// 隐藏like
+		hideLike(){
+			this.like = false;
 		},
 		// 复制html代码
 		copyHtml() {
