@@ -70,5 +70,13 @@
 		"style": "<style>label{width:240px;position:relative;display:flex;align-items:center;}input{width:240px;height:32px;line-height:32px;padding:0 10px;border:2px solid transparent;border-bottom-color:#333;background-color:transparent;box-sizing:border-box;transition:all 0.3s;font-size:14px;color:#333;}span{position:absolute;font-size:14px;color:#999;left:12px;cursor:text;z-index:1;transition:all 0.3s;}label:hover input,input:focus{border-color:blue;border-radius:8px;}input:focus+span,input:valid+span{transform:translateY(-32px);}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<label><input type='text' required=''><span>用户名</span></label>"
+	},
+	{
+		"type": 0,
+	  "id": 10,
+	  "title": "多彩变化的按钮",
+		"style": "<style>button{width:140px;height:46px;font-size:16px;font-weight:700;color:black;border:2px solid #ffffff;border-radius:10px;background-color:#4158D0;background-image:linear-gradient(90deg,#4158D0 0%,#C850C0 17%,#e6a731 39%,#8329e2 60%,#3fb75f 80%,#4158D0 100%);box-shadow:0 0 0 2px #000000;cursor:pointer;transition:all 0.5s ease;}button:hover{color:#ffffff;animation:quick 0.5s linear infinite;}@keyframes quick{to{background-position:140px 0;}}button:active{transform:translateY(1px);}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<button>戳一下</button>"
 	}
 ]
