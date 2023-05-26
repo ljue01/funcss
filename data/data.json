@@ -78,5 +78,13 @@
 		"style": "<style>button{width:140px;height:46px;font-size:16px;font-weight:700;color:black;border:2px solid #ffffff;border-radius:10px;background-color:#4158D0;background-image:linear-gradient(90deg,#4158D0 0%,#C850C0 17%,#e6a731 39%,#8329e2 60%,#3fb75f 80%,#4158D0 100%);box-shadow:0 0 0 2px #000000;cursor:pointer;transition:all 0.5s ease;}button:hover{color:#ffffff;animation:quick 0.5s linear infinite;}@keyframes quick{to{background-position:140px 0;}}button:active{transform:translateY(1px);}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<button>戳一下</button>"
+	},
+	{
+		"type": 2,
+	  "id": 11,
+	  "title": "旋转的太极图",
+		"style": "<style>.taiji{width:200px;height:200px;position:relative;border-radius:50%;box-shadow:0px -10px 20px 0px #2AF598,0px 10px 20px 0px #08AEEA;animation:zhuan 5s linear infinite;}.taiji:before,.taiji:after{content:'';width:200px;height:100px;position:absolute;background-color:#fff;border-radius:100px 100px 0 0;}.taiji:after{top:100px;background-color:#000;border-radius:0 0 100px 100px;}.yu:before,.yu:after{content:'';width:24px;height:24px;position:absolute;top:50px;left:100px;border-radius:50%;background-color:#000;border:38px solid #fff;z-index:1;}.yu:after{left:0;background-color:#fff;border:38px solid #000;}@keyframes zhuan{to{transform:rotate(360deg);}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='taiji'><div class='yu'></div></div>"
 	}
 ]
