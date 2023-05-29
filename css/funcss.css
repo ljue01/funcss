@@ -1,3 +1,6 @@
+#app{
+	min-width: 60rem;
+}
 #app,header,main,section{
 	position: relative;
 }
@@ -200,7 +203,7 @@ footer>section>*{
 	color: #2552CD;
 }
 .html-box{
-	height: 120px;
+	height: 7.5rem;
 	overflow-y: auto;
 }
 .css-box{
@@ -243,4 +246,39 @@ footer>section>*{
 }
 .pop-main-2{
 	width: auto;
+}
+
+/** 自适应 **/
+@media screen and (max-width:960px){
+	header{
+		padding: 4.375rem 0 0;
+	}
+	.item-box{
+		width: 50%;
+		padding: 1rem;
+	}
+	footer{
+		padding: 1.5rem 2rem;
+	}
+	.pop-cont, .pop-cont-2{
+		padding: 3.75rem;
+	}
+	.pop-main, .pop-main-2{
+		padding: 1rem;
+	}
+	.pop-left, .pop-right{
+		padding: 1rem;
+	}
+	.pop-eg{
+		height: 11.25rem;
+	}
+	.popup-box{
+		padding: 1.25rem;
+	}
+	.popup-box.m-t-40{
+		margin-top: 2rem;
+	}
+	.css-box{
+		height: 26.4375rem;
+	}
 }
