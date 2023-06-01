@@ -263,14 +263,17 @@ footer>section>*{
 	.pop-cont, .pop-cont-2{
 		padding: 3.75rem;
 	}
-	.pop-main, .pop-main-2{
+	.pop-main{
 		padding: 1rem;
+	}
+	.pop-main-2{
+		padding: 2rem;
 	}
 	.pop-left, .pop-right{
 		padding: 1rem;
 	}
 	.pop-eg{
-		height: 11.25rem;
+		height: 12.5rem;
 	}
 	.popup-box{
 		padding: 1.25rem;
@@ -278,7 +281,78 @@ footer>section>*{
 	.popup-box.m-t-40{
 		margin-top: 2rem;
 	}
+	.popup-title{
+		padding-bottom: 1.25rem;
+	}
 	.css-box{
-		height: 26.4375rem;
+		height: 27rem;
+	}
+}
+@media screen and (min-width: 961px) and (max-width:1024px){
+	header{
+		padding: 4.375rem 0 0;
+	}
+	.item-box{
+		width: 50%;
+		padding: 1rem;
+	}
+	footer{
+		padding: 1.5rem 2rem;
+	}
+	.pop-cont, .pop-cont-2{
+		padding: 3.75rem;
+	}
+	.pop-main{
+		padding: 1rem;
+	}
+	.pop-main-2{
+		padding: 2rem;
+	}
+	.pop-left, .pop-right{
+		padding: 1rem;
+	}
+	.pop-eg{
+		height: 12.5rem;
+	}
+	.popup-box{
+		padding: 1.25rem;
+	}
+	.popup-box.m-t-40{
+		margin-top: 2rem;
+	}
+	.popup-title{
+		padding-bottom: 1.25rem;
+	}
+	.css-box{
+		height: 27rem;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width:1440px){
+	.item-box{
+		width: 33.3333%;
+		padding: 1rem;
+	}
+	.pop-main{
+		padding: 1rem;
+	}
+	.pop-eg{
+		height: 12.5rem;
+	}
+	.popup-box{
+		padding: 1.25rem;
+	}
+	.popup-box.m-t-40{
+		margin-top: 2rem;
+	}
+	.popup-title{
+		padding-bottom: 1.25rem;
+	}
+	.css-box{
+		height: 27rem;
+	}
+}
+@media screen and (min-width: 1441px) and (max-width:1680px){
+	.item-box{
+		width: 33.3333%;
 	}
 }
