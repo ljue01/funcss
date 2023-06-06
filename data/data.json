@@ -86,5 +86,13 @@
 		"style": "<style>.taiji{width:140px;height:140px;position:relative;border-radius:50%;box-shadow:0px -10px 20px 0px #2AF598,0px 10px 20px 0px #08AEEA;animation:zhuan 5s linear infinite;}.taiji:before,.taiji:after{content:'';width:140px;height:70px;position:absolute;background-color:#fff;border-radius:70px 70px 0 0;}.taiji:after{top:70px;background-color:#000;border-radius:0 0 70px 70px;}.yu:before,.yu:after{content:'';width:20px;height:20px;position:absolute;top:35px;left:70px;border-radius:50%;background-color:#000;border:25px solid #fff;z-index:1;}.yu:after{left:0;background-color:#fff;border:25px solid #000;}@keyframes zhuan{to{transform:rotate(360deg);}}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<div class='taiji'><div class='yu'></div></div>"
+	},
+	{
+		"type": 1,
+	  "id": 12,
+	  "title": "新拟态输入框",
+		"style": "<style>input{width:180px;height:56px;border:none;outline-style:none;font-size:16px;color:#333333;padding:0 28px;border-radius:28px;background:#e0e0e0;box-shadow:6px 6px 12px #b8b8b8,-6px -6px 12px #ffffff,inset 0 0 0 #b8b8b8,inset 0 0 0 #ffffff;transition:all .24s ease-in-out;}input:focus{box-shadow:0 0 0 #b8b8b8,0 0 0 #ffffff,inset 6px 6px 12px #b8b8b8,inset -6px -6px 12px #ffffff;}input::placeholder{color:rgba(0,0,0,0.4);font-size:16px;font-weight:700;transition:all .24s ease-in-out;}input:focus::placeholder{color:rgba(0,0,0,0.8);}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<input type='text' placeholder='用户名/邮箱'>"
 	}
 ]
