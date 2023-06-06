@@ -247,17 +247,23 @@ footer>section>*{
 /** 自适应 **/
 @media screen and (max-width:768px){
 	header{
-		padding: 4.375rem 0 0;
+		padding: 3rem 0 0;
+	}
+	section{
+		margin-top: 2rem;
 	}
 	.tag,.see-code,footer section:last-child .text-link:nth-child(1),footer section:last-child .text-link:nth-child(2){
 		display: none;
 	}
+	ul{
+		padding: 0 0.5rem;
+	}
 	.item-box{
 		width: 100%;
-		padding: 1rem;
+		padding: 1rem 0.5rem;
 	}
 	footer{
-		padding: 1.5rem 2rem;
+		padding: 1rem;
 	}
 	footer>section>*{
 		padding: 0.625rem;
