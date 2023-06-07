@@ -67,9 +67,9 @@
 		"type": 1,
 	  "id": 9,
 	  "title": "输入框选中交互动效",
-		"style": "<style>label{width:240px;position:relative;display:flex;align-items:center;}input{width:240px;height:32px;line-height:32px;padding:0 10px;border:2px solid transparent;border-bottom-color:#333;background-color:transparent;box-sizing:border-box;transition:all 0.3s;font-size:14px;color:#333;}span{position:absolute;font-size:14px;color:#999;left:12px;cursor:text;z-index:1;transition:all 0.3s;}label:hover input,input:focus{border-color:blue;border-radius:8px;}input:focus+span,input:valid+span{transform:translateY(-32px);}</style>",
+		"style": "<style>.label9{width:240px;position:relative;display:flex;align-items:center;}.inp9{width:240px;height:32px;line-height:32px;padding:0 10px;border:2px solid transparent;border-bottom-color:#333;background-color:transparent;box-sizing:border-box;transition:all 0.3s;font-size:14px;color:#333;}.span9{position:absolute;font-size:14px;color:#999;left:12px;cursor:text;z-index:1;transition:all 0.3s;}.label9:hover .inp9,.inp9:focus{border-color:blue;border-radius:8px;}.inp9:focus+.span9,.inp9:valid+.span9{transform:translateY(-32px);}</style>",
 	  "coder": "Just. Liu",
-	  "code": "<label><input type='text' required=''><span>用户名</span></label>"
+	  "code": "<label class='label9'><input class='inp9' type='text' required=''><span class='span9'>用户名</span></label>"
 	},
 	{
 		"type": 0,
@@ -91,8 +91,24 @@
 		"type": 1,
 	  "id": 12,
 	  "title": "新拟态输入框",
-		"style": "<style>input{width:180px;height:56px;border:none;outline-style:none;font-size:16px;color:#333333;padding:0 28px;border-radius:28px;background:#e0e0e0;box-shadow:6px 6px 12px #b8b8b8,-6px -6px 12px #ffffff,inset 0 0 0 #b8b8b8,inset 0 0 0 #ffffff;transition:all .24s ease-in-out;}input:focus{box-shadow:0 0 0 #b8b8b8,0 0 0 #ffffff,inset 6px 6px 12px #b8b8b8,inset -6px -6px 12px #ffffff;}input::placeholder{color:rgba(0,0,0,0.4);font-size:16px;font-weight:700;transition:all .24s ease-in-out;}input:focus::placeholder{color:rgba(0,0,0,0.8);}</style>",
+		"style": "<style>.inp12{width:180px;height:56px;border:none;outline-style:none;font-size:16px;color:#333333;padding:0 28px;border-radius:28px;background:#e0e0e0;box-shadow:6px 6px 12px #b8b8b8,-6px -6px 12px #ffffff,inset 0 0 0 #b8b8b8,inset 0 0 0 #ffffff;transition:all .24s ease-in-out;}.inp12:focus{box-shadow:0 0 0 #b8b8b8,0 0 0 #ffffff,inset 6px 6px 12px #b8b8b8,inset -6px -6px 12px #ffffff;}.inp12::placeholder{color:rgba(0,0,0,0.4);font-size:16px;font-weight:700;transition:all .24s ease-in-out;}.inp12:focus::placeholder{color:rgba(0,0,0,0.8);}</style>",
 	  "coder": "Just. Liu",
-	  "code": "<input type='text' placeholder='用户名/邮箱'>"
+	  "code": "<input class='inp12' type='text' placeholder='用户名/邮箱'>"
+	},
+	{
+		"type": 1,
+	  "id": 13,
+	  "title": "搜索框小动效",
+		"style": "<style>.label13{position:relative;}.inp13{width:38px;height:38px;line-height:38px;outline-style:none;background-color:transparent;font-size:16px;color:#333;border:3px solid #a8a8a8;border-radius:19px;padding:0 16px;box-sizing:border-box;transition:all 1s ease-in-out;}.line13{width:3px;height:14px;display:block;background-color:#a8a8a8;transform:rotate(320deg);position:absolute;left:30px;top:32px;z-index:10;opacity:1;transition:all 1s ease-in-out;}.inp13:focus,.inp13:valid{width:180px;}.inp13:focus+.line13,.inp13:valid+.line13{width:1px;height:16px;left:19px;top:10px;opacity:0;transform:rotate(360deg);}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='label13'><input class='inp13' type='text' required><span class='line13'></span></label>"
+	},
+	{
+		"type": 1,
+	  "id": 14,
+	  "title": "简约大方的输入框",
+		"style": "<style>.label14{position:relative;}.inp14{width:140px;height:36px;line-height:36px;outline-style:none;background-color:transparent;font-size:16px;color:#333;border:none;padding:0 8px;box-sizing:border-box;}.line14{width:0;height:2px;display:block;background-color:#4158D0;background-image:linear-gradient(90deg,#4158D0 0%,#C850C0 48%,#FFCC70 100%);transition:all 0.24s ease-in-out;}.inp14:focus+.line14,.inp14:valid+.line14{width:100%;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='label14'><input class='inp14' type='text' placeholder='在此输入文字' required><span class='line14'></span></label>"
 	}
 ]
