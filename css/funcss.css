@@ -222,7 +222,7 @@ footer>section>*{
 	width: 30rem;
 	font-size: 14px;
 }
-.about-box p{
+.about-box p,.issue-box p{
 	margin-bottom: 1.5rem;
 	line-height: 1.5;
 }
@@ -243,6 +243,28 @@ footer>section>*{
 }
 .pop-main-2{
 	width: auto;
+}
+.issue-box{
+	width: 15.25rem;
+	font-size: 0.875rem;
+}
+.btn-issue{
+	width: 15rem;
+	padding: 1rem 0;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--main-color);
+	display: block;
+	text-align: center;
+	border: 0.125rem solid var(--main-color);
+	border-radius: var(--border-radius);
+	transition: all 0.24s ease-in-out;
+}
+.btn-issue:hover{
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #2552CD;
+	border-color: #ffffff;
 }
 /** 自适应 **/
 @media screen and (max-width:768px){
