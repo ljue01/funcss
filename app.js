@@ -47,7 +47,7 @@ const app = Vue.createApp({
 				.replace(/}[^}]*<\/style>/g, '}</style>')
 				.replace(/}.cs[^}]*@/g, '}@')
 				.replace(/}.cs[^}]*\s}/g, '}}')
-				.replace(/}.cs\d+\s(100%|0%|50%|75%|to|from)/g, '}$1');
+				.replace(/}.cs\d+\s(0%|20%|40%|50%|60%|75%|80%|100%|to|from)/g, '}$1');
 			}
 		}
 	},

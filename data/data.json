@@ -110,5 +110,13 @@
 		"style": "<style>.label14{position:relative;}.inp14{width:140px;height:36px;line-height:36px;outline-style:none;background-color:transparent;font-size:16px;color:#333;border:none;padding:0 8px;box-sizing:border-box;}.line14{width:0;height:2px;display:block;background-color:#4158D0;background-image:linear-gradient(90deg,#4158D0 0%,#C850C0 48%,#FFCC70 100%);transition:all 0.24s ease-in-out;}.inp14:focus+.line14,.inp14:valid+.line14{width:100%;}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<label class='label14'><input class='inp14' type='text' placeholder='在此输入文字' required><span class='line14'></span></label>"
+	},
+	{
+		"type": 0,
+	  "id": 15,
+	  "title": "一直动的按钮",
+		"style": "<style>.btn15{width:140px;height:48px;line-height:48px;background-color:#eee;border:none;border-radius:24px;font-size:16px;color:#333333;text-align:center;transition:all 0.24s linear;}.btn15:hover{cursor:pointer;color:#fff;background-color:#253ed2;animation:yizhidong 0.24s linear infinite;}@keyframes yizhidong{0%{transform:translate(0);}20%{transform:translate(-3px,3px);}40%{transform:translate(-2px,-3px);}60%{transform:translate(3px,2px);}80%{transform:translate(2px,-3px);}100%{transform:translate(0);}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<button class='btn15'>动起来</button>"
 	}
 ]
