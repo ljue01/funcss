@@ -11,6 +11,7 @@ const app = Vue.createApp({
 			htmlTip: false,
 			cssTip: false,
 			issue: false,
+			pageLoad: true,
       items: []
     }
   },
@@ -20,6 +21,9 @@ const app = Vue.createApp({
 		}).catch(error => {
 			console.log(error);
 		});
+		setTimeout(() => {
+			this.pageLoad = false;
+		}, 5000);
 	},
 	computed: {
 		filteredCode() {
