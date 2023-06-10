@@ -118,5 +118,13 @@
 		"style": "<style>.btn15{width:140px;height:48px;line-height:48px;background-color:#eee;border:none;border-radius:24px;font-size:16px;color:#333333;text-align:center;transition:all 0.24s linear;}.btn15:hover{cursor:pointer;color:#fff;background-color:#253ed2;animation:yizhidong 0.24s linear infinite;}@keyframes yizhidong{0%{transform:translate(0);}20%{transform:translate(-3px,3px);}40%{transform:translate(-2px,-3px);}60%{transform:translate(3px,2px);}80%{transform:translate(2px,-3px);}100%{transform:translate(0);}}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<button class='btn15'>动起来</button>"
+	},
+	{
+		"type": 0,
+	  "id": 16,
+	  "title": "汉堡菜单按钮",
+		"style": "<style>.label16{width:48px;height:36px;display:block;position:relative;cursor:pointer;}.inp16{display:none;}.line16{width:inherit;height:4px;border-radius:2px;display:block;background-color:#3d3d3d;position:absolute;top:0;transition:all 0.24s ease-in-out;}.line16:nth-of-type(2){top:16px;}.line16:nth-of-type(3){top:32px;}.inp16:checked ~ .line16:nth-of-type(1){transform:rotate(45deg);top:16px;}.inp16:checked ~ .line16:nth-of-type(2){width:0;}.inp16:checked ~ .line16:nth-of-type(3){transform:rotate(-45deg);top:16px;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='label16'><input class='inp16' type='checkbox'><span class='line16'></span><span class='line16'></span><span class='line16'></span></label>"
 	}
 ]
