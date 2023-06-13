@@ -126,5 +126,13 @@
 		"style": "<style>.label16{width:48px;height:36px;display:block;position:relative;cursor:pointer;}.inp16{display:none;}.line16{width:inherit;height:4px;border-radius:2px;display:block;background-color:#3d3d3d;position:absolute;top:0;transition:all 0.24s ease-in-out;}.line16:nth-of-type(2){top:16px;}.line16:nth-of-type(3){top:32px;}.inp16:checked ~ .line16:nth-of-type(1){transform:rotate(45deg);top:16px;}.inp16:checked ~ .line16:nth-of-type(2){width:0;}.inp16:checked ~ .line16:nth-of-type(3){transform:rotate(-45deg);top:16px;}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<label class='label16'><input class='inp16' type='checkbox'><span class='line16'></span><span class='line16'></span><span class='line16'></span></label>"
+	},
+	{
+		"type": 2,
+	  "id": 17,
+	  "title": "文字加载动画效果",
+		"style": "<style>.loading17{height:48px;font-size:32px;font-weight:700;letter-spacing:24px;color:black;display:flex;justify-content:center;align-items:center;}.loading17 .load-span17{animation:text-load17 2.8s linear infinite;}.loading17 .load-span17:nth-of-type(1){color:#3185fa;animation-delay:0.4s;}.loading17 .load-span17:nth-of-type(2){color:#fc3621;animation-delay:0.8s;}.loading17 .load-span17:nth-of-type(3){color:#fcbb02;animation-delay:0.12s;}.loading17 .load-span17:nth-of-type(4){color:#3285ff;animation-delay:1.6s;}.loading17 .load-span17:nth-of-type(5){color:#2ab148;animation-delay:2.0s;}.loading17 .load-span17:nth-of-type(6){color:#fb3320;animation-delay:2.4s;}@keyframes text-load17{0%{transform:translateY(0);}50%{transform:translateY(-20px);}100%{transform:translateY(0);}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='loading17'><span class='load-span17'>F</span><span class='load-span17'>U</span><span class='load-span17'>N</span><span class='load-span17'>C</span><span class='load-span17'>S</span><span class='load-span17'>S</span></div>"
 	}
 ]
