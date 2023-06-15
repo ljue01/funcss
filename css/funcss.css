@@ -346,9 +346,11 @@ footer>section>*{
 	}
 	footer section:first-child{
 		width: 50%;
+		line-height: 1.25rem;
 	}
 	footer section:last-child{
 		width: 30%;
+		line-height: 1.25rem;
 	}
 }
 /** 自适应 **/
