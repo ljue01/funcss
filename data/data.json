@@ -142,5 +142,13 @@
 		"style": "<style>.spotlight18{color:#eaeaea;font-size:40px;font-weight:900;text-transform:uppercase;position:relative;}.spotlight18:before{width:inherit;height:inherit;content:attr(data-cont);color:transparent;background-image:linear-gradient(90deg,#4158D0 0%,#C850C0 30%,#FFCC70 66%,#56e28d 100%);-webkit-background-clip:text;position:absolute;top:0;left:0;animation:spotlight18 8s linear infinite;}@keyframes spotlight18{0%{clip-path:ellipse(32px 32px at 0 50%);}50%{clip-path:ellipse(32px 32px at 100% 50%);}100%{clip-path:ellipse(32px 32px at 0 50%);}}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<div class='spotlight18' data-cont='spotlight'>spotlight</div>"
+	},
+	{
+		"type": 2,
+	  "id": 19,
+	  "title": "弹跳的圆",
+		"style": "<style>.yuan19{width:20px;height:66px;position:relative;}.yuan19:before{content:'';width:20px;height:20px;position:absolute;border-radius:50%;background-color:#333;animation:yuan191 .5s ease infinite alternate;}@keyframes yuan191{0%{top:60px;height:5px;border-radius:50px 50px 25px 25px;transform:scaleX(1.5);}50%{height:20px;border-radius:50%;transform:scaleX(1);}100%{top:0;}}.yuan19:after{content:'';width:20px;height:4px;border-radius:50%;position:absolute;top:62px;animation:yuan192 .5s ease infinite alternate;}@keyframes yuan192{0%{filter:blur(1px);transform:scaleX(1.5);background-color:rgba(0,0,0,0.9);}50%{transform:scaleX(1);background-color:rgba(0,0,0,0.6);}100%{filter:blur(2px);transform:scaleX(0.5);background-color:rgba(0,0,0,0.3);}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='yuan19'></div>"
 	}
 ]
