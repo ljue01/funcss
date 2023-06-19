@@ -158,5 +158,13 @@
 		"style": "<style>.font20{color:transparent;font-size:70px;font-weight:900;background-image:linear-gradient(-45deg,#d1d1d1 0%,#d1d1d1 25%,green 25%,green 50%,#d1d1d1 50%,#d1d1d1 75%,green 75%,green 100%);-webkit-background-clip:text;animation:font20 10s ease infinite;}@keyframes font20{0%{background-size:1px 2px;}20%{background-size:4px 5px;}40%{background-size:3px 4px;}60%{background-size:5px 6px;}80%{background-size:2px 3px;}100%{background-size:7px 6px;}}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<div class='font20'>不就是<br>玩嘛！</div>"
+	},
+	{
+		"type": 3,
+	  "id": 21,
+	  "title": "好看的网格阴影文字",
+		"style": "<style>.font21{color:transparent;font-size:70px;font-weight:900;letter-spacing:10px;background-image:linear-gradient(-45deg,#d1d1d1 0%,#d1d1d1 25%,#3d3d3d 25%,#3d3d3d 50%,#d1d1d1 50%,#d1d1d1 75%,#3d3d3d 75%,#3d3d3d 100%);background-size:4px 4px;-webkit-background-clip:text;position:relative;}.font21:before{content:attr(data-text);letter-spacing:10px;color:#3d3d3d;position:absolute;top:-6px;left:-6px;text-shadow:2px 2px #d1d1d1;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='font21' data-text='不就是玩嘛！'>不就是<br>玩嘛！</div>"
 	}
 ]
