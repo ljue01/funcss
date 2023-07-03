@@ -174,5 +174,37 @@
 		"style": "<style>.icon22{width:72px;height:72px;line-height:72px;text-align:center;color:#daa500;font-size:40px;font-weight:900;background-color:#ffee00;border-radius:50%;box-shadow:inset 0 0 0 4px #ffee00,inset 0 0 0 5px #daa500;animation:ani-icon22 5s ease infinite;}@keyframes ani-icon22{0%{transform:rotateY(0deg);animation-timing-function:cubic-bezier(0.5,0,1,0.5);}50%{transform:rotateY(900deg);animation-timing-function:cubic-bezier(0,0.5,0.5,1);}100%{transform:rotateY(1800deg);animation-timing-function:cubic-bezier(0.5,0,1,0.5);}}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<div class='icon22'>¥</div>"
+	},
+	{
+		"type": 3,
+	  "id": 23,
+	  "title": "闪烁的霓虹灯文字",
+		"style": "<style>.light23{cursor:default;}.title23{color:#eaeaea;font-size:32px;font-weight:900;letter-spacing:10px;}.info23{color:#eaeaea;font-size:16px;letter-spacing:1px;text-transform:capitalize;}.light23:hover .title23 span{animation:light 0.4s ease forwards;}.light23:hover .title23 span:nth-of-type(2){animation-delay:.14s;}.light23:hover .title23 span:nth-of-type(3){animation-delay:.42s;}.light23:hover .title23 span:nth-of-type(4){animation-delay:.78s;}@keyframes light{10%,30%,50%{color:#eaeaea;text-shadow:none;}20%,40%,60%{color:#318BF6;text-shadow:0px 0px 20px #1ABFED,0px 0px 40px #1ABFED,0px 0px 60px #1ABFED;}100%{color:#318BF6;text-shadow:0px 0px 20px #1ABFED,0px 0px 40px #1ABFED,0px 0px 60px #1ABFED;}}.light23:hover .info23 span{animation:light 0.4s ease forwards;animation-delay:1s;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='light23'><div class='title23'><span>鸿</span><span>星</span><span>尔</span><span>克</span></div><div class='info23'><span>to be number one</span></div></div>"
+	},
+	{
+		"type": 3,
+	  "id": 24,
+	  "title": "故障字体效果",
+		"style": "<style>.font24{width:156px;height:98px;position:relative;font-size:70px;font-weight:900;color:transparent;letter-spacing:10px;z-index:10;animation:text-skew24 4s linear infinite;}.font24:before,.font24:after{display:block;content:attr(data-text);position:absolute;top:0;left:0;}.font24:before{animation:text-light241 1s alternate-reverse infinite;color:#ff0000;z-index:-5;text-shadow:2px 2px 0 #00ff00;mix-blend-mode:darken;}.font24:after{animation:text-light242 0.5s alternate-reverse infinite;color:#00ff00;z-index:-10;text-shadow:2px 2px 0 #ff0000;}@keyframes text-light241{10%{transform:translate(-2px,4px);}50%{transform:translate(2px,2px);}100%{transform:translate(-4px,4px);}}@keyframes text-light242{0%{transform:translate(0,0);}20%{transform:translate(-2px,2px);}40%{transform:translate(-2px,2px);}60%{transform:translate(2px,-2px);}80%{transform:translate(2px,2px);}100%{transform:translate(0,0);}}@keyframes text-skew24{29%{color:transparent;transform:skew(0deg,0deg);}30%{color:#000000;transform:skew(10deg,40deg);}31%{color:transparent;transform:skew(0deg,0deg);}69%{color:transparent;transform:skew(0deg,0deg);}70%{color:#000000;transform:skew(180deg,10deg);}71%{color:transparent;transform:skew(0deg,0deg);}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='font24' data-text='404'>404</div>"
+	},
+	{
+		"type": 3,
+	  "id": 25,
+	  "title": "一串乱码",
+		"style": "<style>.font25{position:relative;font-size:24px;font-weight:900;color:#1630f1;letter-spacing:10px;background-color:#d1d1d1;}.font25:after{content:'';position:absolute;top:0;z-index:10;background-color:inherit;animation:textani251 2.4s linear infinite;animation-delay:2s;}@keyframes textani251{0%{content:'$-';left:0;}5%{content:'.y';left:0;}10%{content:'*&#-';left:0;}15%{content:'-!~;';left:0;}20%{content:'#^_,-&';left:0;}25%{content:':I^!+.';left:0;}30%{content:'#;+.-?+u';left:0;}35%{content:'f7*%!-;.';left:0;}40%{content:'^=,*~*,!';left:0;}45%{content:'+0^&!$^-';left:0;}50%{content:'&-?;-=|.';left:0;}55%{content:'u<|:!-';left:auto;right:0;}60%{content:';~^!-,';left:auto;right:0;}65%{content:')+-,';left:auto;right:0;}70%{content:'+.=!';left:auto;right:0;}75%{content:'&-';left:auto;right:0;}80%{content:';.';left:auto;right:0;}85%{content:'-';left:auto;right:0;}90%{content:'#';left:auto;right:0;}95%{content:'';left:0;}100%{content:'';left:0;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='font25'>The Bug!</div>"
+	},
+	{
+		"type": 2,
+	  "id": 26,
+	  "title": "加载的圆",
+		"style": "<style>.loading26{width:90px;height:90px;display:flex;flex-wrap:wrap;justify-content:space-between;align-content:space-between;animation:loading26-eff 3s linear infinite;}@keyframes loading26-eff{0%{transform:scale(1) rotate(0);}20%{transform:scale(1) rotate(72deg);}40%{transform:scale(0.5) rotate(144deg);}60%{transform:scale(0.5) rotate(216deg);}80%{transform:scale(1) rotate(288deg);}100%{transform:scale(1) rotate(360deg);}}.round26{width:40px;height:40px;display:block;border-radius:20px 20px 20px 20px;box-sizing:border-box;}.round26:nth-of-type(1){background-color:#50DE68;animation:round-eff261 3s linear infinite;}.round26:nth-of-type(2){background-color:#3DC453;animation:round-eff262 3s linear infinite;}.round26:nth-of-type(3){background-color:#14BE71;animation:round-eff263 3s linear infinite;}.round26:nth-of-type(4){background-color:#78DE35;animation:round-eff264 3s linear infinite;}@keyframes round-eff261{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:20px 20px 0 20px;}60%{border-radius:20px 20px 0 20px;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}@keyframes round-eff262{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:20px 20px 20px 0;}60%{border-radius:20px 20px 20px 0;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}@keyframes round-eff263{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:20px 0 20px 20px;}60%{border-radius:20px 0 20px 20px;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}@keyframes round-eff264{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:0 20px 20px 20px;}60%{border-radius:0 20px 20px 20px;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='loading26'><span class='round26'></span><span class='round26'></span><span class='round26'></span><span class='round26'></span></div>"
 	}
 ]

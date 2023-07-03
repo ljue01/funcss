@@ -143,6 +143,7 @@ ul{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 .see-code{
 	font-size: 0.75rem;
