@@ -10,7 +10,6 @@ const app = Vue.createApp({
 			like: false,
 			htmlTip: false,
 			cssTip: false,
-			issue: false,
 			pageLoad: true,
       items: []
     }
@@ -81,14 +80,6 @@ const app = Vue.createApp({
 		// 隐藏like
 		hideLike(){
 			this.like = false;
-		},
-		// 显示issue
-		showIssue(){
-			this.issue = true;
-		},
-		// 隐藏issue
-		hideIssue(){
-			this.issue = false;
 		},
 		// 复制html代码
 		copyHtml() {
