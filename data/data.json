@@ -206,5 +206,21 @@
 		"style": "<style>.loading26{width:90px;height:90px;display:flex;flex-wrap:wrap;justify-content:space-between;align-content:space-between;animation:loading26-eff 3s linear infinite;}@keyframes loading26-eff{0%{transform:scale(1) rotate(0);}20%{transform:scale(1) rotate(72deg);}40%{transform:scale(0.5) rotate(144deg);}60%{transform:scale(0.5) rotate(216deg);}80%{transform:scale(1) rotate(288deg);}100%{transform:scale(1) rotate(360deg);}}.round26{width:40px;height:40px;display:block;border-radius:20px 20px 20px 20px;box-sizing:border-box;}.round26:nth-of-type(1){background-color:#50DE68;animation:round-eff261 3s linear infinite;}.round26:nth-of-type(2){background-color:#3DC453;animation:round-eff262 3s linear infinite;}.round26:nth-of-type(3){background-color:#14BE71;animation:round-eff263 3s linear infinite;}.round26:nth-of-type(4){background-color:#78DE35;animation:round-eff264 3s linear infinite;}@keyframes round-eff261{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:20px 20px 0 20px;}60%{border-radius:20px 20px 0 20px;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}@keyframes round-eff262{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:20px 20px 20px 0;}60%{border-radius:20px 20px 20px 0;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}@keyframes round-eff263{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:20px 0 20px 20px;}60%{border-radius:20px 0 20px 20px;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}@keyframes round-eff264{0%{border-radius:20px 20px 20px 20px 20px;}20%{border-radius:20px 20px 20px 20px;}40%{border-radius:0 20px 20px 20px;}60%{border-radius:0 20px 20px 20px;}80%{border-radius:20px 20px 20px 20px 20px;}100%{border-radius:20px 20px 20px 20px 20px;}}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<div class='loading26'><span class='round26'></span><span class='round26'></span><span class='round26'></span><span class='round26'></span></div>"
+	},
+	{
+		"type": 2,
+	  "id": 27,
+	  "title": "鼠标滚动小动效",
+		"style": "<style>.cursor27{width:40px;height:60px;border:3px solid #333333;border-radius:20px;box-sizing:border-box;position:relative;}.ani-box27{width:6px;height:14px;display:block;position:absolute;top:6px;left:14px;background-color:#333333;border-radius:3px;animation:moveeff27 2s ease-in-out infinite;}@keyframes moveeff27{0%{top:6px;}50%{top:16px;}100%{top:6px;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='cursor27'><span class='ani-box27'></span></div>"
+	},
+	{
+		"type": 1,
+	  "id": 28,
+	  "title": "输入框交互",
+		"style": "<style>.label28{width:190px;height:68px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;cursor:text;}.span28{width:100%;color:#000;font-size:14px;margin-bottom:6px;padding:0 10px;}.inp28{width:100%;padding:0 10px;height:2px;border:0;font-size:14px;box-sizing:border-box;background-color:rgba(0,0,0,0.1);transition:.3s;}.inp28:hover{background-color:rgba(50,133,255,0.7);}.inp28:focus,.inp28:valid{background-color:rgba(50,133,255,0.2);border:2px solid rgba(50,133,255,0.7);border-radius:4px;height:42px;color:#000;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='label28'><span class='span28'>用户名</span><input class='inp28' type='text' required></label>"
 	}
 ]
