@@ -222,5 +222,45 @@
 		"style": "<style>.label28{width:190px;height:68px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;cursor:text;}.span28{width:100%;color:#000;font-size:14px;margin-bottom:6px;padding:0 10px;}.inp28{width:100%;padding:0 10px;height:2px;border:0;font-size:14px;box-sizing:border-box;background-color:rgba(0,0,0,0.1);transition:.3s;}.inp28:hover{background-color:rgba(50,133,255,0.7);}.inp28:focus,.inp28:valid{background-color:rgba(50,133,255,0.2);border:2px solid rgba(50,133,255,0.7);border-radius:4px;height:42px;color:#000;}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<label class='label28'><span class='span28'>用户名</span><input class='inp28' type='text' required></label>"
+	},
+	{
+		"type": 0,
+	  "id": 29,
+	  "title": "圆点交互按钮",
+		"style": "<style>.btn29{width:100px;height:42px;line-height:42px;position:relative;cursor:pointer;}.btn29-bg{width:30px;height:30px;display:block;border-radius:15px;position:absolute;left:0;bottom:0;background-color:#97E138;transition:0.24s;}.btn29-span-text{width:100%;text-align:center;display:block;font-size:16px;font-weight:700;color:#056C00;position:absolute;}.btn29:hover .btn29-bg{width:100%;height:42px;border-radius:21px;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='btn29'><span class='btn29-bg'></span><span class='btn29-span-text'>查看详情</span></div>"
+	},
+	{
+		"type": 0,
+	  "id": 30,
+	  "title": "文字上下滑动按钮",
+		"style": "<style>.btn30{height:42px;position:relative;cursor:pointer;display:flex;overflow:hidden;}.btn-text30{width:36px;height:42px;line-height:42px;text-align:center;display:block;background-color:#457356;color:#ffffff;font-size:16px;font-weight:700;position:relative;}.btn-text30:after{width:36px;height:42px;position:absolute;background-color:#3185fa;color:#ffffff;z-index:99;transition:0.3s ease-in-out;}.btn-text30:nth-of-type(1):after{content:'学';top:-42px;left:0;}.btn-text30:nth-of-type(2):after{content:'无';top:42px;left:0px;}.btn-text30:nth-of-type(3):after{content:'止';top:-42px;left:0;}.btn-text30:nth-of-type(4):after{content:'境';top:42px;left:0px;}.btn30:hover .btn-text30:after{top:0;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='btn30'><span class='btn-text30'>探</span><span class='btn-text30'>索</span><span class='btn-text30'>未</span><span class='btn-text30'>知</span></div>"
+	},
+	{
+		"type": 0,
+	  "id": 31,
+	  "title": "呼吸灯按钮",
+		"style": "<style>.btn31{width:190px;height:42px;cursor:pointer;border:none;border-radius:4px;background-color:#333;font-size:16px;font-weight:700;color:#fff;transition:0.3s;}.btn31:hover{background-color:#3185fa;}.btn31:active{animation:btn31-eff 3s linear infinite;}@keyframes btn31-eff{0%{box-shadow:0 0 2px #3185fa;}50%{box-shadow:0 0 40px #3185fa;}100%{box-shadow:0 0 2px #3185fa;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<button class='btn31'>按住说话</button>"
+	},
+	{
+		"type": 0,
+	  "id": 32,
+	  "title": "新拟态按钮",
+		"style": "<style>.btn32{height:70px;padding:0 20px;cursor:pointer;border:1px solid rgba(255,255,255,0.8);border-radius:10px;background-color:#f2fff7;font-size:32px;font-weight:700;color:#44d431;box-shadow:6px 6px 16px rgba(0,0,0,0.2),-6px -6px 16px rgba(255,255,255,0.8),inset 0px 0px 0px rgba(0,0,0,0.2),inset 0px 0px 0px rgba(255,255,255,0.8);transition:0.2s;}.btn32:hover{color:#3034d4;background-color:#f2f3ff;border:1px solid rgba(255,255,255,1);box-shadow:0px 0px 0px rgba(0,0,0,0.2),0px 0px 0px rgba(255,255,255,0.8),inset 6px 6px 12px rgba(0,0,0,0.2),inset -6px -6px 12px rgba(255,255,255,0.8);transform:translateY(10px) scale(0.98);}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<button class='btn32'>FUN</button>"
+	},
+	{
+		"type": 0,
+	  "id": 33,
+	  "title": "好看的开关按钮",
+		"style": "<style>.label33{width:60px;height:32px;position:relative;cursor:pointer;}.inp33{display:none;}.check-span33{width:100%;height:100%;display:block;background-color:#383838;border-radius:16px;transition:0.3s linear;}.check-span33:after{content:'';width:22px;height:22px;border:6px solid greenyellow;border-radius:11px;position:absolute;top:5px;left:6px;box-sizing:border-box;transition:0.3s ease-in-out;}.inp33:checked + .check-span33{background-color:green;}.inp33:checked + .check-span33:after{transform:translateX(26px);border:6px solid white;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='label33'><input class='inp33' type='checkbox'><span class='check-span33'></span></label>"
 	}
 ]
