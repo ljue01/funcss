@@ -262,5 +262,21 @@
 		"style": "<style>.label33{width:60px;height:32px;position:relative;cursor:pointer;}.inp33{display:none;}.check-span33{width:100%;height:100%;display:block;background-color:#383838;border-radius:16px;transition:0.3s linear;}.check-span33:after{content:'';width:22px;height:22px;border:6px solid greenyellow;border-radius:11px;position:absolute;top:5px;left:6px;box-sizing:border-box;transition:0.3s ease-in-out;}.inp33:checked + .check-span33{background-color:green;}.inp33:checked + .check-span33:after{transform:translateX(26px);border:6px solid white;}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<label class='label33'><input class='inp33' type='checkbox'><span class='check-span33'></span></label>"
+	},
+	{
+		"type": 0,
+	  "id": 34,
+	  "title": "暗黑模式切换开关",
+		"style": "<style>.label34{width:60px;height:32px;position:relative;cursor:pointer;}.inp34{display:none;}.check-span34{width:100%;height:100%;display:block;background-color:#383838;border:2px solid #383838;box-sizing:border-box;border-radius:16px;transition:0.3s linear;}.check-span34:after{content:'';width:22px;height:22px;background-color:#383838;box-shadow:inset -8px -4px 0 #ffffff;border-radius:11px;position:absolute;top:5px;left:6px;box-sizing:border-box;transition:0.3s ease-in-out;}.inp34:checked + .check-span34{background-color:#ffffff;}.inp34:checked + .check-span34:after{transform:translateX(26px);background-color:orange;box-shadow:none;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='label34'><input class='inp34' type='checkbox'><span class='check-span34'></span></label>"
+	},
+	{
+		"type": 1,
+	  "id": 35,
+	  "title": "提示文字跳起来的输入框",
+		"style": "<style>.label35{width:180px;position:relative;cursor:text;}.inp35{width:100%;padding:0 10px;height:42px;background-color:transparent;border:0;border-bottom:2px solid #414141;font-size:16px;outline:none;box-sizing:border-box;transition:.3s;}.span35-box{width:100%;padding:0 10px;color:#aaa;font-size:16px;position:absolute;top:9px;box-sizing:border-box;display:flex;}.span35-info{transition:.3s cubic-bezier(0.5,-0.5,0.5,1.5);}.span35-info:nth-of-type(2){transition-delay:100ms;}.span35-info:nth-of-type(3){transition-delay:200ms;}.inp35:focus + .span35-box .span35-info,.inp35:valid + .span35-box .span35-info{color:#3034d4;transform:translateY(-30px);}.inp35:focus,.inp35:valid{border-bottom:2px solid #3034d4;}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<label class='label35'><input class='inp35' type='text' required><span class='span35-box'><span class='span35-info'>用</span><span class='span35-info'>户</span><span class='span35-info'>名</span></span></label>"
 	}
 ]
