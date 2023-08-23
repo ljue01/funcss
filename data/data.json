@@ -286,5 +286,13 @@
 		"style": "<style>.btn36{width:86px;height:30px;background-color:#d1cfc0;font-size:12px;color:#000000;outline:1px dotted #333333;outline-offset:-4px;border:none;box-shadow:inset 1px 1px 1px #fff,inset -1px -1px 1px #333333;transition:0.1s linear;}.btn36:active{box-shadow:inset 1px 1px 1px #333333,inset -1px -1px 1px #fff;transform:scale(0.98);}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<button class='btn36'>确 认</button>"
+	},
+	{
+		"type": 2,
+	  "id": 37,
+	  "title": "音频小动效",
+		"style": "<style>.audio-box37{width:84px;height:32px;display:flex;justify-content:space-between;align-items:flex-end;}.audio37-block{width:6px;box-sizing:border-box;background-color:#97E138;animation:audio37-eff 2s linear infinite;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #97E138;}.audio37-block:nth-of-type(2){background-color:#FF3A85;animation-delay:.3s;animation-duration:2.4s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #FF3A85;}.audio37-block:nth-of-type(3){background-color:#A2DAF6;animation-delay:.38s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #A2DAF6;}.audio37-block:nth-of-type(4){background-color:#FFD6D0;animation-delay:.5s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #FFD6D0;}.audio37-block:nth-of-type(5){background-color:#FF472C;animation-duration:2.7s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #FF472C;}.audio37-block:nth-of-type(6){background-color:#DE74CE;animation-delay:.6s;animation-duration:1.4s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #DE74CE;}.audio37-block:nth-of-type(7){background-color:#36AFCA;animation-delay:.8s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #36AFCA;}@keyframes audio37-eff{0%{height:0;}50%{height:32px;}100%{height:0;}}</style>",
+	  "coder": "Just. Liu",
+	  "code": "<div class='audio-box37'><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div></div>"
 	}
 ]
