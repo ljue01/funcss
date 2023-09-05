@@ -294,5 +294,13 @@
 		"style": "<style>.audio-box37{width:84px;height:32px;display:flex;justify-content:space-between;align-items:flex-end;}.audio37-block{width:6px;box-sizing:border-box;background-color:#97E138;animation:audio37-eff 2s linear infinite;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #97E138;}.audio37-block:nth-of-type(2){background-color:#FF3A85;animation-delay:.3s;animation-duration:2.4s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #FF3A85;}.audio37-block:nth-of-type(3){background-color:#A2DAF6;animation-delay:.38s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #A2DAF6;}.audio37-block:nth-of-type(4){background-color:#FFD6D0;animation-delay:.5s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #FFD6D0;}.audio37-block:nth-of-type(5){background-color:#FF472C;animation-duration:2.7s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #FF472C;}.audio37-block:nth-of-type(6){background-color:#DE74CE;animation-delay:.6s;animation-duration:1.4s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #DE74CE;}.audio37-block:nth-of-type(7){background-color:#36AFCA;animation-delay:.8s;box-shadow:0 -1px 0 #ffffff,0 -2px 0 #36AFCA;}@keyframes audio37-eff{0%{height:0;}50%{height:32px;}100%{height:0;}}</style>",
 	  "coder": "Just. Liu",
 	  "code": "<div class='audio-box37'><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div><div class='audio37-block'></div></div>"
-	}
+	},
+	{
+			"type": 2,
+		  "id": 38,
+		  "title": "渐变加载条",
+			"style": "<style>.loading38{--r-num:45deg;width:40px;height:40px;position:relative;animation:loading38-eff 1s steps(8) both infinite;}.load-span38{width:6px;height:6px;display:block;border-radius:3px;position:absolute;left:17px;top:0;transform-origin:3px 20px;}.load-span38:nth-of-type(1){transform:rotate(var(--r-num));background:#2FACFD;}.load-span38:nth-of-type(2){transform:rotate(calc(var(--r-num)*2));background:#33B4FD;}.load-span38:nth-of-type(3){transform:rotate(calc(var(--r-num)*3));background:#38BEFE;}.load-span38:nth-of-type(4){transform:rotate(calc(var(--r-num)*4));background:#3ECAFE;}.load-span38:nth-of-type(5){transform:rotate(calc(var(--r-num)*5));background:#45D7FE;}.load-span38:nth-of-type(6){transform:rotate(calc(var(--r-num)*6));background:#4BE4FE;}.load-span38:nth-of-type(7){transform:rotate(calc(var(--r-num)*7));background:#52F1FF;}.load-span38:nth-of-type(8){transform:rotate(calc(var(--r-num)*8));background:#57FBFF;}@keyframes loading38-eff{to{transform:rotate(0deg);}from{transform:rotate(-360deg);}}</style>",
+		  "coder": "Just. Liu",
+		  "code": "<div class='loading38'><span class='load-span38'></span><span class='load-span38'></span><span class='load-span38'></span><span class='load-span38'></span><span class='load-span38'></span><span class='load-span38'></span><span class='load-span38'></span><span class='load-span38'></span></div>"
+		}
 ]
