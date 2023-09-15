@@ -310,5 +310,13 @@
 		"style": "<style>.loading39{width:88px;height:88px;background-color:#ffffff;position:relative;box-shadow:0 4px 10px rgba(0,0,0,0.2);overflow:hidden;}.round39{width:18px;height:18px;border-radius:9px;background-color:#d6d6d6;position:absolute;animation:round39-eff 3s both infinite;}.one-sj39{border-bottom:30px solid #ddd;border-left:24px solid transparent;border-right:24px solid transparent;position:absolute;animation:one-sj39-eff 3s both infinite;}.two-sj39{border-bottom:44px solid #d1d1d1;border-left:30px solid transparent;border-right:30px solid transparent;position:absolute;right:0;animation:two-sj39-eff 3s both infinite;animation-delay:.2s;}@keyframes round39-eff{0%{top:16px;left:88px;}50%{top:14px;left:24px;}100%{top:16px;left:-18px;}}@keyframes one-sj39-eff{0%{bottom:-32px;}50%{bottom:0;}100%{bottom:-32px;}}@keyframes two-sj39-eff{0%{bottom:-46px;}50%{bottom:0;}100%{bottom:-46px;}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='loading39'><span class='round39'></span><span class='one-sj39'></span><span class='two-sj39'></span></div>"
+	},
+	{
+		"type": 2,
+		"id": 40,
+		"title": "乱转的指北针",
+		"style": "<style>.loading40{width:126px;height:126px;background-color:#000000;border-radius:50%;position:relative;border:6px solid #FFCA1C;transform:rotate(35deg);animation:zhuan40-eff 6s ease-in-out infinite;box-shadow:inset 0px 0px 2px #ffffff;}.one-sj40{border-bottom:40px solid #FFCA1C;border-left:16px solid transparent;border-right:16px solid transparent;position:absolute;top:22px;left:47px;}.two-sj40{border-top:40px solid #FFF42B;border-left:16px solid transparent;border-right:16px solid transparent;position:absolute;bottom:22px;left:47px;}.round40{width:12px;height:12px;border-radius:50%;background-color:#000000;position:absolute;top:57px;left:57px;z-index:10;}@keyframes zhuan40-eff{0%{transform:rotate(35deg);}30%{transform:rotate(0deg);}45%{transform:rotate(-60deg);}60%{transform:rotate(60deg);}65%{transform:rotate(-30deg);}80%{transform:rotate(100deg);}95%{transform:rotate(-10deg);}100%{transform:rotate(35deg);}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='loading40'><span class='one-sj40'></span><span class='two-sj40'></span><span class='round40'></span></div>"
 	}
 ]
