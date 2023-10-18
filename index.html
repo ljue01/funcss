@@ -42,6 +42,7 @@
 								<span v-html="LocationStyle(item.style,item.id)"></span>
 								<span :class="'cs'+item.id" v-html="item.code"></span>
 							</div>
+							<a class="see-content" :href="item.link" target="_blank">代码详解</a>
 							<a class="see-code" href="javascript:;" @click="showPopup(item)">查看代码</a>
 						</div>
 					</li>
