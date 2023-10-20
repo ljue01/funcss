@@ -376,5 +376,14 @@
 		"style": "<style>.loading42{width:40px;height:40px;border:6px solid rgba(0,0,0,0);border-top-color:#b12a5b;border-bottom-color:#b12a5b;border-radius:50%;position:relative;animation:eff42 1.4s linear infinite;}.loading42:after{content:'';width:60px;height:60px;border:6px solid rgba(0,0,0,0);border-top-color:#ff8177;border-bottom-color:#ff8177;border-radius:50%;position:absolute;top:-16px;left:-16px;animation:inherit;animation-duration:0.7s;animation-direction:reverse;}.loading42:before{content:'';width:20px;height:20px;border:6px solid rgba(0,0,0,0);border-top-color:#ff8177;border-bottom-color:#ff8177;border-radius:50%;position:absolute;top:4px;left:4px;animation:inherit;animation-duration:0.7s;animation-direction:reverse;}@keyframes eff42{to{transform:rotate(360deg);}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='loading42'></div>"
+	},
+	{
+		"type": 2,
+		"id": 43,
+		"title": "丝滑的加载条动画",
+		"link": "https://mp.weixin.qq.com/s?__biz=MzU2ODYyNDc4OQ==&mid=2247484700&idx=1&sn=e83a2a136bcc34496b4f124af36503af&chksm=fc8a56e6cbfddff094002851d60814a6d7f00eb35b507c372af455793cfd7b11723d06090595#rd",
+		"style": "<style>.loading43{width:140px;height:4px;border-radius:2px;background-color:rgba(0,0,0,0.2);position:relative;}.loading43:after{content:'';height:4px;border-radius:2px;background-color:#2aa738;position:absolute;animation:eff43 2.4s ease-in-out infinite;}@keyframes eff43{0%{width:0;}50%{width:100%;}100%{width:0;right:0;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='loading43'></div>"
 	}
 ]
