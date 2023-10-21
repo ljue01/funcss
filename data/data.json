@@ -385,5 +385,14 @@
 		"style": "<style>.loading43{width:140px;height:4px;border-radius:2px;background-color:rgba(0,0,0,0.2);position:relative;}.loading43:after{content:'';height:4px;border-radius:2px;background-color:#2aa738;position:absolute;animation:eff43 2.4s ease-in-out infinite;}@keyframes eff43{0%{width:0;}50%{width:100%;}100%{width:0;right:0;}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='loading43'></div>"
+	},
+	{
+		"type": 0,
+		"id": 43,
+		"title": "文字下划线条动画按钮",
+		"link": "https://mp.weixin.qq.com/s?__biz=MzU2ODYyNDc4OQ==&mid=2247484706&idx=1&sn=10fea7c4c33105a06ea979ac20de1e09&chksm=fc8a56d8cbfddfce410fd0e08e50f138d567a7363cdac2a12116bc319a57e0704efea3a18448#rd",
+		"style": "<style>.btn44{font-size:14px;font-weight:700;height:32px;line-height:32px;color:#333333;text-decoration:none;cursor:pointer;position:relative;}.btn44:after{content:'';width:0;height:2px;background-color:#333333;position:absolute;right:0;bottom:0px;transition:width 0.6s;}.btn44:hover:after{width:100%;left:0;}</style>",
+		"coder": "Just. Liu",
+		"code": "<a href='javascript:;' class='btn44'>Design</a>"
 	}
 ]
