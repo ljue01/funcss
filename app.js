@@ -122,6 +122,13 @@ const app = Vue.createApp({
 				this.cssTip = false;
 			}, 2000); // 2秒后隐藏提示信息
 			
+		},
+		// 回到顶部
+		top(){
+			window.scrollTo({
+			        top:0,
+			        behavior:"smooth"
+			    })
 		}
   }
 })
