@@ -7,6 +7,7 @@ const app = Vue.createApp({
 			selectedType: '',
 			show: false,
 			about: false,
+			sponsor: false,
 			like: false,
 			htmlTip: false,
 			cssTip: false,
@@ -80,6 +81,14 @@ const app = Vue.createApp({
 		// 隐藏like
 		hideLike(){
 			this.like = false;
+		},
+		// 显示sponsor
+		showSponsor(){
+			this.sponsor = true;
+		},
+		// 隐藏sponsor
+		hideSponsor(){
+			this.sponsor = false;
 		},
 		// 复制html代码
 		copyHtml() {
