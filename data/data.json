@@ -412,5 +412,14 @@
 		"style": "<style>.label46{width:100px;height:100px;position:relative;display:flex;justify-content:center;align-items:center;cursor:pointer;}.checkbox46{display:none;}.btn46{width:60px;height:56px;position:relative;}.btn46:before{content:'';position:absolute;left:23px;width:30px;height:50px;background-color:#666666;border-radius:30px 30px 0 0;transform:rotate(45deg);transition:all 0.4s;}.btn46:after{content:'';position:absolute;left:8px;width:30px;height:50px;background-color:#666666;border-radius:30px 30px 0 0;transform:rotate(-45deg);transition:all 0.4s;}.ani46{position:absolute;width:10px;height:10px;background-color:transparent;border-radius:50%;box-shadow:0 40px 0 -4px #ff0000,40px 0 0 -4px #ff0000,0 -40px 0 -4px #ff0000,-40px 0 0 -4px #ff0000,-24px 24px 0 -4px #ff0000,-30px -30px 0 -4px #ff0000,30px -30px 0 -4px #ff0000,24px 24px 0 -4px #ff0000;opacity:0;}.checkbox46:checked + .btn46:before{background-color:#ff0000;}.checkbox46:checked + .btn46:after{background-color:#ff0000;}.checkbox46:checked + .btn46{animation:love-eff46 0.4s ease-out forwards;}.checkbox46:checked ~ .ani46{animation:anieff46 1s ease-out forwards;}@keyframes love-eff46{50%{transform:scaleY(0.6);}100%{transform:scaleY(1);}}@keyframes anieff46{0%{transform:scale(0);}40%{opacity:1;}100%{transform:scale(1.4);opacity:0;}}</style>",
 		"coder": "Just. Liu",
 		"code": "<label class='label46'><input type='checkbox' class='checkbox46' /><div class='btn46'></div><div class='ani46'></div></label>"
+	},
+	{
+		"type": 0,
+		"id": 47,
+		"title": "暗黑模式切换按钮",
+		"link": "https://mp.weixin.qq.com/s?__biz=MzU2ODYyNDc4OQ==&mid=2247484778&idx=1&sn=944aaf421b983c2cb3104fb2370b9879&chksm=fc8a5690cbfddf86924246bd95010360176253000202ca064dacc0413505a88ed856631bf6da#rd",
+		"style": "<style>.label47{width:60px;height:60px;border:2px solid #000;position:relative;cursor:pointer;border-radius:50%;box-shadow:-6px 6px 0 #000;box-sizing:border-box;transition:all 0.1s;}.checkbox47{display:none;}.status47{width:30px;height:30px;background-color:transparent;box-shadow:inset -12px -8px 0 #000;border-radius:50%;position:absolute;top:12px;left:12px;box-sizing:border-box;transition:all 0.4s;}.label47:active{box-shadow:0px 0px #000;transform:translate(-6px,6px);}.checkbox47:checked + .status47{width:24px;height:24px;box-shadow:inset -30px -30px 0 #000;top:16px;left:16px;}.checkbox47:checked + .status47:after{content:'';width:10px;height:10px;background-color:#000;box-shadow:0 18px 0 -4px #000,18px 0 0 -4px #000,0 -18px 0 -4px #000,-18px 0 0 -4px #000,-12px 12px 0 -4px #000,-12px -12px 0 -4px #000,12px -12px 0 -4px #000,12px 12px 0 -4px #000;border-radius:50%;position:absolute;top:7px;left:7px;box-sizing:border-box;animation:anieff47 0.4s ease-out forwards;}@keyframes anieff47{0%{transform:scale(0);}100%{transform:scale(1);}}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label47'><input type='checkbox' class='checkbox47'/><div class='status47'></div></label>"
 	}
 ]
