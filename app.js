@@ -39,10 +39,18 @@ const app = Vue.createApp({
 				.replace(/  }/g, '}');
 			};
 		},
+		// filteredItems() {
+		// 	return this.selectedType === ''
+		// 		? this.items
+		// 		: this.items.filter(item => item.type === parseInt(this.selectedType))
+		// },
 		filteredItems() {
-			return this.selectedType === ''
+			let filtered = this.selectedType === ''
 				? this.items
-				: this.items.filter(item => item.type === parseInt(this.selectedType))
+				: this.items.filter(item => item.type === parseInt(this.selectedType));
+
+			// 反序排列
+			return filtered.slice().reverse();
 		},
 		LocationStyle() {
 			return function(value,cId){
