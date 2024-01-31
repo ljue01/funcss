@@ -475,5 +475,14 @@
 		"style": "<style>.waterbox53{width:100px;height:100px;border:1px solid white;box-shadow:0 0 0 2px blue;border-radius:50%;overflow:hidden;position:relative;}.loadwave53{width:100%;height:100%;border-radius:50%;background:blue;}.loadwave53:before,.loadwave53:after{content:'';width:200px;height:200px;left:-50px;position:absolute;z-index:5;}.loadwave53:before{border-radius:44%;background:#ffffff;animation:rotatewaveeff53 6s linear infinite,loadwaveeff53 10s linear infinite;}.loadwave53:after{border-radius:38%;background:rgb(255,255,255,0.5);animation:rotatewaveeff53 8s linear infinite,loadwaveeff53 10s linear infinite;}@keyframes rotatewaveeff53{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}@keyframes loadwaveeff53{0%{top:-100px;}100%{top:-210px;}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='waterbox53'><div class='loadwave53'></div></div>"
+	},
+	{
+		"type": 0,
+		"id": 54,
+		"title": "卡片翻转效果",
+		"link": "https://mp.weixin.qq.com/s?__biz=MzU2ODYyNDc4OQ==&mid=2247484885&idx=1&sn=e5efa6ce8f4f8c9bf8924b78deb83b58&chksm=fc8a562fcbfddf39c1d268312cfa5acf1b302ed3b69d3ce05c2a7a23ecc144691a377e298736#rd",
+		"style": "<style>.card54{width:100px;height:46px;cursor:pointer;box-sizing:border-box;font-weight:800;letter-spacing:2px;color:#ffffff;}.card54::before,.card54::after{width:100px;height:46px;border-radius:9px;border:1px dashed #ffffff;display:flex;align-items:center;justify-content:center;position:absolute;content:'有彩蛋';background-color:#36AFCA;box-shadow:0 0 0 4px #36AFCA;transition:transform 0.3s linear;backface-visibility:hidden;}.card54::after{content:'叫爸爸';background-color:#F89C6B;box-shadow:0 0 0 4px #F89C6B;transform:rotateY(180deg);}.card54:hover::before{transform:rotateY(180deg);}.card54:hover::after{transform:rotateY(0deg);}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='card54'></div>"
 	}
 ]
