@@ -484,5 +484,14 @@
 		"style": "<style>.card54{width:100px;height:46px;cursor:pointer;box-sizing:border-box;font-weight:800;letter-spacing:2px;color:#ffffff;}.card54::before,.card54::after{width:100px;height:46px;border-radius:9px;border:1px dashed #ffffff;display:flex;align-items:center;justify-content:center;position:absolute;content:'有彩蛋';background-color:#36AFCA;box-shadow:0 0 0 4px #36AFCA;transition:transform 0.3s linear;backface-visibility:hidden;}.card54::after{content:'叫爸爸';background-color:#F89C6B;box-shadow:0 0 0 4px #F89C6B;transform:rotateY(180deg);}.card54:hover::before{transform:rotateY(180deg);}.card54:hover::after{transform:rotateY(0deg);}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='card54'></div>"
+	},
+	{
+		"type": 3,
+		"id": 55,
+		"title": "文字隐身术",
+		"link": "https://mp.weixin.qq.com/s?__biz=MzU2ODYyNDc4OQ==&mid=2247484891&idx=1&sn=09f8b70504470604cd6c1012bc4f24e2&chksm=fc8a5621cbfddf37803721ad82204a7d5a9c1ff6279238d648d44d941859c945db1318d32c96#rd",
+		"style": "<style>.text55{position:relative;display:flex;justify-content:center;align-items:center;}.textspan55{font-size:16px;font-weight:800;color:rgba(0,0,0,1);letter-spacing:6px;animation:textspaneff55 3s linear infinite;}.textspan55:nth-of-type(1){animation-delay:1.8s;}.textspan55:nth-of-type(2){animation-delay:2.2s;}.textspan55:nth-of-type(3){animation-delay:2.6s;}.textspan55:nth-of-type(4){animation-delay:3s;}@keyframes textspaneff55{50%{text-shadow:0 0 0 rgba(0,0,0,0);filter:blur(0);transform:translate(0,0) rotate(0deg) skew(0deg) scale(1);color:rgba(0,0,0,1);opacity:1;}80%{text-shadow:0 0 8px rgba(0,0,0,1);filter:blur(10px);}100%{text-shadow:0 0 0 rgba(0,0,0,0);filter:blur(20px);transform:translate(100px,-100px) rotate(-45deg) skew(60deg) scale(2);color:rgba(0,0,0,0);opacity:0;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='text55'><span class='textspan55'>隐</span><span class='textspan55'>身</span><span class='textspan55'>术</span><span class='textspan55'>敕</span></div>"
 	}
 ]
