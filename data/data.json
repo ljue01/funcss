@@ -493,5 +493,50 @@
 		"style": "<style>.text55{position:relative;display:flex;justify-content:center;align-items:center;}.textspan55{font-size:16px;font-weight:800;color:rgba(0,0,0,1);letter-spacing:6px;animation:textspaneff55 3s linear infinite;}.textspan55:nth-of-type(1){animation-delay:1.8s;}.textspan55:nth-of-type(2){animation-delay:2.2s;}.textspan55:nth-of-type(3){animation-delay:2.6s;}.textspan55:nth-of-type(4){animation-delay:3s;}@keyframes textspaneff55{50%{text-shadow:0 0 0 rgba(0,0,0,0);filter:blur(0);transform:translate(0,0) rotate(0deg) skew(0deg) scale(1);color:rgba(0,0,0,1);opacity:1;}80%{text-shadow:0 0 8px rgba(0,0,0,1);filter:blur(10px);}100%{text-shadow:0 0 0 rgba(0,0,0,0);filter:blur(20px);transform:translate(100px,-100px) rotate(-45deg) skew(60deg) scale(2);color:rgba(0,0,0,0);opacity:0;}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='text55'><span class='textspan55'>隐</span><span class='textspan55'>身</span><span class='textspan55'>术</span><span class='textspan55'>敕</span></div>"
+	},
+	{
+		"type": 0,
+		"id": 56,
+		"title": "背景收缩动画按钮",
+		"link": "https://mp.weixin.qq.com/s/k500G5246TRfLyOGIr-jig",
+		"style": "<style>.btn56{width:120px;height:46px;font-size:16px;font-weight:400;letter-spacing:2px;background:transparent;position:relative;display:flex;justify-content:center;align-items:center;cursor:pointer;border:1px solid #457356;border-radius:23px;color:#457356;box-sizing:border-box;transition:color 0.6s cubic-bezier(0.65,0.05,0.36,1);overflow:hidden;}.btn56:before{content:'';position:absolute;width:120px;height:120px;border-radius:50%;display:block;transition:box-shadow 0.6s cubic-bezier(0.65,0.05,0.36,1);}.btn56:after{content:attr(data-text);position:absolute;display:block;z-index:5;}.btn56:hover{color:#fff;}.btn56:hover:before{box-shadow:inset 0 0 0 120px #457356;}.btn56:active{transform:scale(0.99) translateY(1px);}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='btn56' data-text='一个按钮'></div>"
+	},
+	{
+		"type": 0,
+		"id": 57,
+		"title": "文字跑马灯按钮",
+		"link": "https://mp.weixin.qq.com/s/8QbcPfPBC5IoEP4MiV4gpg",
+		"style": "<style>.abtn57{width:140px;height:46px;list-style:none;text-decoration:none;display:flex;justify-content:center;align-items:center;background:#457356;position:relative;cursor:pointer;border-radius:23px;overflow:hidden;}.btn57,.bg57{font-size:16px;font-weight:bold;letter-spacing:2px;color:#ffffff;}.bg57{position:absolute;text-shadow:90px 0 #fff,-90px 0 #fff,-180px 0 #fff;animation:effx57 1.2s linear infinite;display:none;}@keyframes effx57{to{transform:translateX(90px);}}.abtn57:hover .bg57{display:block;}.abtn57:hover .btn57{display:none;}</style>",
+		"coder": "Just. Liu",
+		"code": "<a href='javascript:;' class='abtn57'><div class='btn57'>一个按钮</div><span class='bg57'>一个按钮</span></a>"
+	},
+	{
+		"type": 0,
+		"id": 58,
+		"title": "引导式详情按钮",
+		"link": "https://mp.weixin.qq.com/s/-lrAmhvkkZZ_Tig5m5vP8Q",
+		"style": "<style>.btn58{width:120px;height:32px;position:relative;padding:0;border:none;background-color:transparent;cursor:pointer;display:flex;justify-content:left;align-items:center;}.icon58{width:32px;height:32px;position:relative;box-sizing:border-box;background-color:#ffd845;display:block;border-radius:16px;transition:0.3s;}.icon58:before,.icon58:after{content:'';width:3px;height:10px;background-color:#000000;display:block;position:absolute;top:8px;left:16px;transform:rotate(-45deg);}.icon58:after{top:14px;left:16px;transform:rotate(45deg);}.btn-text58{font-size:16px;color:#000000;font-weight:bold;display:block;position:absolute;left:40px;}.btn58:hover .icon58{width:120px;}.btn58:hover .icon58:before,.btn58:hover .icon58:after{animation:move58eff 1.2s linear infinite;}@keyframes move58eff{0%{left:16px;}50%{left:26px;}100%{left:16px;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<button class='btn58'><span class='icon58'></span><span class='btn-text58'>查看详情</span></button>"
+	},
+	{
+		"type": 2,
+		"id": 59,
+		"title": "牛顿摆",
+		"link": "https://mp.weixin.qq.com/s/NvpIIeJiqI3i1O_pfYU0_A",
+		"style": "<style>.niudunbai59{width:80px;height:80px;position:relative;display:flex;justify-content:center;align-items:center;}.niudunbai-dot-59{width:20px;height:100%;display:flex;justify-content:center;align-items:flex-end;transform-origin:center top;}.niudunbai-dot-59:before{content:'';width:20px;height:20px;position:relative;border-radius:50%;background-color:#0093E9;background-image:linear-gradient(160deg,#0093E9 0%,#80D0C7 100%);box-shadow:inset 0 0 4px rgba(0,0,0,0.2);}.niudunbai-dot-59:after{content:'';width:2px;height:60px;position:absolute;top:0;background-color:#0093E9;background-image:linear-gradient(160deg,#0093E9 0%,#80D0C7 100%);}.niudunbai-dot-59:first-child{animation:eff59 1.4s infinite;}.niudunbai-dot-59:last-child{animation:eff592 1.4s infinite;}@keyframes eff59{0%{transform:rotate(0deg);animation-timing-function:ease-out;}25%{transform:rotate(70deg);animation-timing-function:ease-in;}50%{transform:rotate(0deg);animation-timing-function:linear;}}@keyframes eff592{0%{transform:rotate(0deg);animation-timing-function:linear;}50%{transform:rotate(0deg);animation-timing-function:ease-out;}75%{transform:rotate(-70deg);animation-timing-function:ease-in;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='niudunbai59'><div class='niudunbai-dot-59'></div><div class='niudunbai-dot-59'></div><div class='niudunbai-dot-59'></div><div class='niudunbai-dot-59'></div></div>"
+	},
+	{
+		"type": 0,
+		"id": 60,
+		"title": "边框动效按钮",
+		"link": "https://mp.weixin.qq.com/s/bctnFKKNbyimpECMEEphWA",
+		"style": "<style>.btn60{width:124px;height:50px;position:relative;display:flex;justify-content:center;align-items:center;transition:.3s linear;}.btn60:after{content:attr(data-text);position:relative;}.border-tb-60:before{content:'';width:0;height:3px;background-color:black;position:absolute;top:0;left:0;}.border-tb-60:after{content:'';width:0;height:3px;background-color:black;position:absolute;top:47px;right:0;}.border-lr-60:before{content:'';width:3px;height:0;background-color:black;position:absolute;bottom:0;left:0;}.border-lr-60:after{content:'';width:3px;height:0;background-color:black;position:absolute;top:0;left:121px;}.btn60:hover{cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.4);}.btn60:hover .border-tb-60:before,.btn60:hover .border-tb-60:after{animation:eff60 .3s linear forwards;}.btn60:hover .border-lr-60:before,.btn60:hover .border-lr-60:after{animation:eff601 .3s linear forwards;}@keyframes eff60{to{width:100%;}}@keyframes eff601{to{height:100%;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='btn60' data-text='更多详情'><div class='border-tb-60'></div><div class='border-lr-60'></div></div>"
 	}
 ]
