@@ -365,6 +365,12 @@ footer>section>*{
 	background-color: #2552CD;
 	border-color: #ffffff;
 }
+.emoji{
+	position: absolute;
+	left: 1.5rem;
+	top: 1.5rem;
+	z-index: 5;
+}
 /** 自适应 **/
 @media screen and (max-width:768px){
 	header{
