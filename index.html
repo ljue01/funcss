@@ -57,7 +57,7 @@
 				<ul>
 					<li v-for="item in filteredItems" :key="item.id" class="item-box">
 						<div class="item-main">
-							<emoji-reaction availableArrayString="👍,thumbs-up;🎉,party-popper;🚀,rocket;" class="emoji" :reactionTargetId="item.id"></emoji-reaction>
+							<emoji-reaction availableArrayString="👍,thumbs-up;🎉,party-popper;🚀,rocket;" class="emoji" :reacttargetid="item.id"></emoji-reaction>
 							<div class="item-cont">
 								<span v-html="LocationStyle(item.style,item.id)"></span>
 								<span :class="'cs'+item.id" v-html="item.code"></span>
