@@ -583,5 +583,50 @@
 		"style": "<style>.loading65{position:relative;transform:rotate(45deg);}.loading65:before,.rectangle65::before,.rectangle65::after{content:'';width:14px;height:14px;border:2px solid #333333;border-radius:4px;box-sizing:border-box;position:absolute;}.loading65:before{top:0;left:0;animation:eff651 4s ease-in-out infinite;animation-delay:0.45s;}.rectangle65::before{top:12px;left:0px;animation:eff652 4s ease-in-out infinite;animation-delay:0.65s;}.rectangle65::after{top:0px;left:12px;animation:eff653 4s ease-in-out infinite;animation-delay:0.25s;}@keyframes eff651{0%,10%{top:0;left:0;}15%,35%{top:0;left:12px;}40%,60%{top:12px;left:12px;}65%,85%{top:12px;left:0;}90%,100%{top:0;left:0;}}@keyframes eff652{0%,10%{top:12px;left:0;}15%,35%{top:0;left:0;}40%,60%{top:0;left:12px;}65%,85%{top:12px;left:12px;}90%,100%{top:12px;left:0;}}@keyframes eff653{0%,10%{top:0;left:12px;}15%,35%{top:12px;left:12px;}40%,60%{top:12px;left:0;}65%,85%{top:0;left:0;}90%,100%{top:0;left:12px;}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='loading65'><div class='rectangle65'></div></div>"
+	},
+	{
+		"type": 0,
+		"id": 66,
+		"title": "圆形背景动效多选框",
+		"link": "https://mp.weixin.qq.com/s/fGLYrRmxXa0DmG-Ohe6faA",
+		"style": "<style>.label66{position:relative;display:flex;justify-content:center;align-items:center;}.check-inp66{width:40px;height:40px;border-radius:50%;position:absolute;background-color:rgba(0,0,0,0.06);z-index:1;transform:scale(1);transition:transform 0.15s linear;appearance:none;}.span66{width:20px;height:20px;display:block;position:absolute;z-index:2;cursor:pointer;}.span66::before{content:'';width:20px;height:20px;border:2px solid rgba(0,0,0,0.6);border-radius:3px;box-sizing:border-box;display:block;position:absolute;transition:all 0.3s linear;}.span66::after{content:'';width:10px;height:5px;display:block;position:absolute;top:5px;left:4px;border:solid 2px transparent;border-right:none;border-top:none;transform:rotate(-45deg);transition:border-color 0.3s linear;}.label66:hover .span66::before{border-color:#0093E9;}.label66:active .check-inp66,.label66:active .check-inp66:checked{transform:scale(0);transition:transform 0.15s linear;}.check-inp66:checked{background-color:rgba(0,147,233,0.08);}.check-inp66:checked ~ .span66::before{background-color:#0093E9;border-color:#0093E9;}.check-inp66:checked ~ .span66::after{border-color:#ffffff;}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label66'><input type='checkbox' class='check-inp66'><span class='span66'></span></label>"
+	},
+	{
+		"type": 0,
+		"id": 67,
+		"title": "加减动态多选框",
+		"link": "https://mp.weixin.qq.com/s/H6sBX1aRoDg-1fmKQZKP4w",
+		"style": "<style>.label67{position:relative;display:flex;justify-content:center;align-items:center;}.check-inp67{width:32px;height:32px;border-radius:5px;position:absolute;background-color:rgba(0,0,0,0.06);transition:background-color 0.2s linear;z-index:1;cursor:pointer;appearance:none;}.span67{width:20px;height:20px;display:block;position:absolute;z-index:2;cursor:pointer;}.span67::before,.span67::after{content:'';width:20px;height:4px;background-color:#0093E9;box-sizing:border-box;display:block;position:absolute;top:8px;}.span67::after{transform:rotate(90deg);transition:transform 0.2s cubic-bezier(0.68,-0.55,0.27,1.55);}.label67:hover .check-inp67{background-color:rgba(0,0,0,0.09);}.check-inp67:checked + .span67::after{transform:rotate(0deg);}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label67'><input type='checkbox' class='check-inp67'><span class='span67'></span></label>"
+	},
+	{
+		"type": 0,
+		"id": 68,
+		"title": "水波纹按钮",
+		"link": "https://mp.weixin.qq.com/s/vA33y6SSdh8alyycnwCglA",
+		"style": "<style>.btn68{width:120px;height:50px;background-color:#0093E9;color:#ffffff;font-size:16px;font-weight:bold;letter-spacing:2px;border:none;border-radius:25px;cursor:pointer;position:relative;display:flex;justify-content:center;align-items:center;transition:all .1s linear;z-index:1;}.btn68:before,.btn68:after{content:'';width:120px;height:50px;border-radius:25px;position:absolute;animation:eff68 1.4s linear infinite;z-index:-1;}.btn68:after{animation-delay:0.7s;}@keyframes eff68{0%{box-shadow:0 0 0 0px #0093E9;opacity:0.2;}100%{box-shadow:0 0 0 30px #0093E9;opacity:0;}}.btn68:active{transform:scale(0.96);}</style>",
+		"coder": "Just. Liu",
+		"code": "<button class='btn68'>button</button>"
+	},
+	{
+		"type": 0,
+		"id": 69,
+		"title": "双开门按钮",
+		"link": "https://mp.weixin.qq.com/s/Y2-QUbiPvl59MvftXz2QGA",
+		"style": "<style>.btn69{width:120px;height:50px;background-color:transparent;color:#333333;font-size:16px;font-weight:bold;letter-spacing:2px;border:none;cursor:pointer;position:relative;display:flex;justify-content:center;align-items:center;z-index:1;transition:color 0.3s ease-in-out;}.btn69:before,.btn69:after{content:'';width:0;height:50px;background-color:#0093E9;position:absolute;top:0;right:60px;z-index:-1;transition:width 0.3s ease-in-out;}.btn69:after{left:60px;}.btn69:hover:before,.btn69:hover:after{width:60px;}.btn69:hover{color:#ffffff;}</style>",
+		"coder": "Just. Liu",
+		"code": "<button class='btn69'>button</button>"
+	},
+	{
+		"type": 0,
+		"id": 70,
+		"title": "列表块加载动效",
+		"link": "https://mp.weixin.qq.com/s/x_um7xRFvzB-WQ_xJT5DRA",
+		"style": "<style>.list-box70{width:200px;height:76px;position:relative;background-color:#f8f8f8;border-radius:12px;padding:16px;display:flex;box-sizing:border-box;}.pic70{width:44px;height:44px;position:relative;background-color:#e4e4e4;border-radius:4px;animation:eff70 1.8s linear infinite;}.list70{position:relative;display:flex;flex-direction:column;margin-left:10px;}.span70{width:114px;height:20px;position:relative;border-radius:4px;background-color:#e4e4e4;animation:eff70 2s linear infinite;}.span-div70{position:relative;margin-top:10px;display:flex;}.span701,.span702{width:65px;height:14px;position:relative;border-radius:4px;background-color:#e4e4e4;animation:eff70 2.2s linear infinite;}.span702{width:39px;margin-left:10px;animation:eff70 2.4s linear infinite;}@keyframes eff70{0%{opacity:0.2;}50%{opacity:1;}100%{opacity:0.2;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='list-box70'><div class='pic70'></div><div class='list70'><span class='span70'></span><div class='span-div70'><span class='span701'></span><span class='span702'></span></div></div></div>"
 	}
 ]
