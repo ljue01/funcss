@@ -621,7 +621,7 @@
 		"code": "<button class='btn69'>button</button>"
 	},
 	{
-		"type": 0,
+		"type": 2,
 		"id": 70,
 		"title": "列表块加载动效",
 		"link": "https://mp.weixin.qq.com/s/x_um7xRFvzB-WQ_xJT5DRA",
