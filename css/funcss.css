@@ -9,7 +9,7 @@
 }
 .pop-icon{
 	position: fixed;
-	top: 3.5rem;
+	bottom: 7rem;
 	right: 3.5rem;
 	z-index: 99;
 	cursor: pointer;
@@ -99,6 +99,38 @@
 header{
 	width: 100%;
 	padding: 9.75rem 0 4.625rem;
+}
+.logo-aside{
+	width: 100%;
+	padding: 0 3.5rem;
+	position: absolute;
+	top: 3.5rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.logo-website,.gitee-ico{
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+.logo-img{
+	width: 2.5rem;
+	position: relative;
+	font-size: 0;
+}
+.logo-img img{
+  width: 100%;
+}
+.logo-name{
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin-left: 1.25rem;
+}
+.gitee-ico svg{
+	width: 24px;
+	fill: #C71D23;
+	margin-right: 0.625rem;
 }
 .head-title{
 	width: 100%;
@@ -325,12 +357,15 @@ footer>section>*{
 	margin-bottom: 1.5rem;
 	line-height: 1.5;
 }
-.img-box{
+.img-box,.hongbao-box{
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 0!important;
+}
+.hongbao-box{
+	flex-direction: column;
+	margin: 0 1rem;
 }
 .font-b{
 	font-weight: 700;
