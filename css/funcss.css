@@ -409,7 +409,11 @@ footer>section>*{
 /** 自适应 **/
 @media screen and (max-width:768px){
 	header{
-		padding: 3rem 0 0;
+		padding: 9rem 0 0;
+	}
+	.logo-aside{
+		padding: 0 1rem;
+		top: 1rem;
 	}
 	section{
 		margin-top: 2rem;
@@ -442,7 +446,11 @@ footer>section>*{
 /** 自适应 **/
 @media screen and (min-width: 769px) and (max-width:960px){
 	header{
-		padding: 4.375rem 0 0;
+		padding: 9rem 0 0;
+	}
+	.logo-aside{
+		padding: 0 2.75rem;
+		top: 2.75rem;
 	}
 	.item-box{
 		width: 50%;
@@ -481,7 +489,11 @@ footer>section>*{
 }
 @media screen and (min-width: 961px) and (max-width:1024px){
 	header{
-		padding: 4.375rem 0 0;
+		padding: 9rem 0 0;
+	}
+	.logo-aside{
+		padding: 0 2.75rem;
+		top: 2.75rem;
 	}
 	.item-box{
 		width: 50%;
