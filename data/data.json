@@ -679,7 +679,7 @@
 		"id": 76,
 		"title": "圆形金属质感按钮",
 		"link": "https://mp.weixin.qq.com/s/cuJUgnxILOGPUJuNOgNFgA",
-		"style": "<style>.btn76{width:64px;height:64px;background:conic-gradient(from 180deg at 50% 50%,rgba(0,0,0,0.4) 0deg,#FFFFFF 90deg,rgba(0,0,0,0.4) 181deg,#FFFFFF 270deg,rgba(0,0,0,0.4) 360deg);border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;border:1px solid rgba(0,0,0,0.2);box-shadow:1px 1px 0 rgba(255,255,255,0.4) inset,-1px -1px 0 rgba(255,255,255,0.2) inset;outline:1px dashed rgba(0,0,0,0.2);outline-offset:-6px;cursor:pointer;position:relative;box-sizing:border-box;}.inp76{width:6px;height:6px;background-color:rgba(255,255,255,0.6);border-radius:50%;position:absolute;left:24px;top:5px;appearance:none;z-index:10;}.btn76:active{transform:scale(0.98);}.inp76:checked{background:#0DFF00;box-shadow:0px 0px 4px 2px rgba(78,229,70,0.4);}</style>",
+		"style": "<style>.btn76{width:64px;height:64px;background:conic-gradient(from 180deg at 50% 50%,rgba(0,0,0,0.4) 0deg,#FFFFFF 90deg,rgba(0,0,0,0.4) 181deg,#FFFFFF 270deg,rgba(0,0,0,0.4) 360deg);border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;border:1px solid rgba(0,0,0,0.2);box-shadow:1px 1px 0 rgba(255,255,255,0.4) inset,-1px -1px 0 rgba(255,255,255,0.2) inset;outline:1px dashed rgba(0,0,0,0.2);outline-offset:-6px;cursor:pointer;position:relative;box-sizing:border-box;}.inp76{width:6px;height:6px;background-color:rgba(255,255,255,0.6);border-radius:50%;position:absolute;left:28px;top:9px;appearance:none;z-index:10;}.btn76:active{transform:scale(0.98);}.inp76:checked{background:#0DFF00;box-shadow:0px 0px 4px 2px rgba(78,229,70,0.4);}</style>",
 		"coder": "Just. Liu",
 		"code": "<label class='btn76'><input type='checkbox' class='inp76' /></label>"
 	},
