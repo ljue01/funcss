@@ -628,5 +628,95 @@
 		"style": "<style>.list-box70{width:200px;height:76px;position:relative;background-color:#f8f8f8;border-radius:12px;padding:16px;display:flex;box-sizing:border-box;}.pic70{width:44px;height:44px;position:relative;background-color:#e4e4e4;border-radius:4px;animation:eff70 1.8s linear infinite;}.list70{position:relative;display:flex;flex-direction:column;margin-left:10px;}.span70{width:114px;height:20px;position:relative;border-radius:4px;background-color:#e4e4e4;animation:eff70 2s linear infinite;}.span-div70{position:relative;margin-top:10px;display:flex;}.span701,.span702{width:65px;height:14px;position:relative;border-radius:4px;background-color:#e4e4e4;animation:eff70 2.2s linear infinite;}.span702{width:39px;margin-left:10px;animation:eff70 2.4s linear infinite;}@keyframes eff70{0%{opacity:0.2;}50%{opacity:1;}100%{opacity:0.2;}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='list-box70'><div class='pic70'></div><div class='list70'><span class='span70'></span><div class='span-div70'><span class='span701'></span><span class='span702'></span></div></div></div>"
+	},
+	{
+		"type": 2,
+		"id": 71,
+		"title": "文字流光效果",
+		"link": "https://mp.weixin.qq.com/s/Qm2BHFVteouu9x0HxVsQkA",
+		"style": "<style>.text71{font-weight:600;font-size:18px;color:transparent;letter-spacing:4px;margin:0;padding:0 16px;background:linear-gradient(to right,#000 0,#ffff00 20%,#000 40%);background-position:-32px 0;-webkit-background-clip:text;animation:eff71 3s linear infinite;}@keyframes eff71{to{background-position:130px 0;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<p class='text71'>文字流光效果</p>"
+	},
+	{
+		"type": 0,
+		"id": 72,
+		"title": "拉链式展开按钮",
+		"link": "https://mp.weixin.qq.com/s/VeQaPCrFkej8zTDNUN9Xyg",
+		"style": "<style>.btn72{width:120px;height:42px;font-weight:600;font-size:18px;line-height:1;letter-spacing:4px;background:transparent;border:none;display:flex;justify-content:center;align-items:center;position:relative;z-index:0;transition:color 0.3s linear;cursor:pointer;}.btn72:before{content:'';width:0;height:2px;background-color:#1630f1;position:absolute;left:0;z-index:-2;transition:width 0.3s linear;}.btn72:after{content:'';width:100%;height:0;background-color:#1630f1;position:absolute;z-index:-1;transition:height 0.3s linear;}.btn72:hover:before{width:100%;}.btn72:hover:after{transition-delay:0.3s;height:100%;}.btn72:hover{color:#fff;transition-delay:0.3s;}</style>",
+		"coder": "Just. Liu",
+		"code": "<button class='btn72'>HOVER</button>"
+	},
+	{
+		"type": 2,
+		"id": 73,
+		"title": "跷跷板加载动画",
+		"link": "https://mp.weixin.qq.com/s/R10rtTrbXHFwuHRrIbRfBw",
+		"style": "<style>.loading73{width:80px;height:80px;position:relative;display:flex;justify-content:center;align-items:center;transform-origin:center center;animation:effbox73 3s cubic-bezier(0,0.6,1,0.4) infinite;}@keyframes effbox73{0%{transform:rotate(-30deg);}40%{transform:rotate(30deg);}50%{transform:rotate(30deg);}90%{transform:rotate(-30deg);}100%{transform:rotate(-30deg);}}.loading73::before{content:'';width:100%;height:4px;background-color:#000;position:absolute;left:0;}.loading73::after{content:'';width:16px;height:16px;background-color:#089f1f;position:absolute;top:21px;left:0;border-radius:3px;animation:eff73 3s ease-in-out infinite;}@keyframes eff73{0%{transform:translateX(0) rotate(0);}10%{transform:translateX(16px) rotate(90deg);}20%{transform:translateX(32px) rotate(180deg);}30%{transform:translateX(48px) rotate(270deg);}40%{transform:translateX(64px) rotate(360deg);}50%{transform:translateX(64px) rotate(360deg);}60%{transform:translateX(48px) rotate(270deg);}70%{transform:translateX(32px) rotate(180deg);}80%{transform:translateX(16px) rotate(90deg);}90%{transform:translateX(0) rotate(0);}100%{transform:translateX(0) rotate(0);}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='loading73'></div>"
+	},
+	{
+		"type": 0,
+		"id": 74,
+		"title": "多重阴影按钮",
+		"link": "https://mp.weixin.qq.com/s/HvKlzex6YOJtziSvD2F0-w",
+		"style": "<style>.btn74{padding:10px 16px;font-size:16px;border-radius:3px;outline:1px dotted rgba(0,0,0,0.6);outline-offset:-4px;border:1px solid rgba(0,0,0,1);cursor:pointer;transition:box-shadow 0.4s linear;}.btn74:hover{box-shadow:4px 4px rgba(0,0,0,0.4),8px 8px rgba(0,0,0,0.3),12px 12px rgba(0,0,0,0.2);}</style>",
+		"coder": "Just. Liu",
+		"code": "<button class='btn74'>多重阴影按钮</button>"
+	},
+	{
+		"type": 0,
+		"id": 75,
+		"title": "上下线条左右滑动按钮",
+		"link": "https://mp.weixin.qq.com/s/VVB6X9Dg5PCPkv975ok0rQ",
+		"style": "<style>.btn75{padding:10px 16px;font-size:16px;font-weight:700;color:#333;letter-spacing:4px;border:none;outline-style:none;background-color:transparent;cursor:pointer;position:relative;transition:color 0.4s linear;}.btn75:before,.btn75:after{content:'';width:0;height:2px;background-color:#ff3a85;position:absolute;top:0;left:0;transition:width 0.4s linear;}.btn75:after{top:auto;left:auto;bottom:0;right:0;}.btn75:hover:before,.btn75:hover:after{width:100%;}.btn75:hover{color:#ff3985;text-shadow:0 4px 10px rgba(238,99,150,0.4);}</style>",
+		"coder": "Just. Liu",
+		"code": "<button class='btn75'>HOVER</button>"
+	},
+	{
+		"type": 0,
+		"id": 76,
+		"title": "圆形金属质感按钮",
+		"link": "https://mp.weixin.qq.com/s/cuJUgnxILOGPUJuNOgNFgA",
+		"style": "<style>.btn76{width:64px;height:64px;background:conic-gradient(from 180deg at 50% 50%,rgba(0,0,0,0.4) 0deg,#FFFFFF 90deg,rgba(0,0,0,0.4) 181deg,#FFFFFF 270deg,rgba(0,0,0,0.4) 360deg);border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;border:1px solid rgba(0,0,0,0.2);box-shadow:1px 1px 0 rgba(255,255,255,0.4) inset,-1px -1px 0 rgba(255,255,255,0.2) inset;outline:1px dashed rgba(0,0,0,0.2);outline-offset:-6px;cursor:pointer;position:relative;box-sizing:border-box;}.inp76{width:6px;height:6px;background-color:rgba(255,255,255,0.6);border-radius:50%;position:absolute;left:24px;top:5px;appearance:none;z-index:10;}.btn76:active{transform:scale(0.98);}.inp76:checked{background:#0DFF00;box-shadow:0px 0px 4px 2px rgba(78,229,70,0.4);}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='btn76'><input type='checkbox' class='inp76' /></label>"
+	},
+	{
+		"type": 1,
+		"id": 77,
+		"title": "搜索输入框动效",
+		"link": "https://mp.weixin.qq.com/s/HAsXCjwOP0SnGFCEyOu0EA",
+		"style": "<style>.label77{width:240px;height:42px;position:relative;overflow:hidden;}.inp77{width:240px;height:42px;line-height:42px;padding:0 16px;padding-right:42px;border:1px solid rgba(0,0,0,0.2);background-color:#ffffff;box-sizing:border-box;transition:all 0.3s;font-size:14px;border-radius:21px;color:#333;position:absolute;list-style:none;outline-style:none;}.search-btn77{position:absolute;top:22px;right:35px;}.search-btn77:before{content:'';width:16px;height:16px;border:2px solid rgba(0,0,0,0.6);border-radius:50%;display:block;position:absolute;top:-14px;transition:border 0.32s linear;}.search-btn77:after{content:'';width:2px;height:8px;background-color:rgba(0,0,0,0.6);display:block;position:absolute;top:3px;right:-19px;transform:rotate(-45deg);transition:background-color 0.32s linear;}.label77:hover .inp77,.inp77:focus,.inp77:valid{color:#000000;border:1px solid rgba(29,52,202,0.4);}.inp77:valid+.search-btn77:before{border:2px solid rgba(29,52,202,1);}.inp77:valid+.search-btn77:after{background-color:rgba(29,52,202,1);}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label77'><input class='inp77' size='16' type='search' placeholder='请输入关键字' required><span class='search-btn77'></span></label>"
+	},
+	{
+		"type": 0,
+		"id": 78,
+		"title": "日夜间切换开关",
+		"link": "https://mp.weixin.qq.com/s/zgy1MDiTbszJss8i_gucYQ",
+		"style": "<style>.label78{position:relative;cursor:pointer;overflow:hidden;}.checkbox78{width:90px;height:40px;background-color:#000000;border-radius:20px;margin:0;cursor:pointer;box-sizing:border-box;transition:all 0.4s linear;appearance:none;-webkit-appearance:none;}.status78{width:16px;height:16px;background-color:transparent;box-shadow:inset -6px -4px 0 yellow;border-radius:50%;position:absolute;right:17px;top:12px;transition:all 0.4s linear;display:flex;align-items:center;justify-content:center;}.status78:after{content:'夜间';font-size:14px;font-weight:bold;color:#ffffff;letter-spacing:3px;line-height:1;position:absolute;left:-38px;top:1px;}.checkbox78:checked{background-color:#ebebeb;}.checkbox78:checked + .status78{width:16px;height:16px;box-shadow:inset -16px -16px 0 red;right:17px;}.checkbox78:checked + .status78:after{content:'日间';color:#000000;}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label78'><input type='checkbox' class='checkbox78' /><div class='status78'></div></label>"
+	},
+	{
+		"type": 2,
+		"id": 79,
+		"title": "代码瀑布加载动画",
+		"link": "https://mp.weixin.qq.com/s/6PBIYMrDEvIOUKUFERHOew",
+		"style": "<style>.loading79{width:160px;height:88px;font-size:24px;font-weight:bold;letter-spacing:4px;background-color:transparent;position:relative;overflow:hidden;}.p79{writing-mode:vertical-rl;font-size:14px;line-height:2;margin:0;padding:0;position:absolute;color:#43ff85;--left-79:8px;--delay-79:0.1s;animation:eff79 0.6s linear infinite;}.i79{color:#6c72fe;}.i79-1{color:#f7e543;}.p79:nth-child(1){left:var(--left-79);}.p79:nth-child(2){left:calc(var(--left-79)*3);animation-delay:var(--delay-79);}.p79:nth-child(3){left:calc(var(--left-79)*5);animation-delay:calc(var(--delay-79)*2);}.p79:nth-child(4){left:calc(var(--left-79)*7);}.p79:nth-child(5){left:calc(var(--left-79)*9);}.p79:nth-child(6){left:calc(var(--left-79)*11);animation-delay:calc(var(--delay-79)*3);}.p79:nth-child(7){left:calc(var(--left-79)*13);}.p79:nth-child(8){left:calc(var(--left-79)*15);animation-delay:calc(var(--delay-79)*4);}@keyframes eff79{0%{transform:translateY(-40%);}100%{transform:translateY(140%);}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='loading79'><p class='p79'>4rs<span class='i79-1'>b</span>h<span class='i79'>k</span>r</p><p class='p79'>_7u<span class='i79'>i</span>90<span class='i79'>@</span>v</p><p class='p79'>_7,=<span class='i79-1'>j</span>ud<span class='i79'>i</span>y</p><p class='p79'>d8<span class='i79-1'>%</span>rg</p><p class='p79'><span class='i79'>d</span>oopd<span class='i79-1'>e</span>g</p><p class='p79'>c4*<span class='i79-1'>h</span>ld</p><p class='p79'>u<span class='i79'>g</span>_^43<span class='i79'>2</span>iu</p><p class='p79'>+o<span class='i79-1'>0</span>u-i,</p></div>"
+	},
+	{
+		"type": 0,
+		"id": 80,
+		"title": "悬停代码小瀑布按钮",
+		"link": "https://mp.weixin.qq.com/s/o1BGjOrpihie6z6HXLr_1g",
+		"style": "<style>.btn-box80{width:124px;height:46px;position:relative;display:flex;justify-content:center;align-items:center;cursor:pointer;--color-f-80:#43ff85;--color-s-80:#6c72fe;--color-t-80:#f7e543;}.btn80{width:124px;height:46px;font-size:20px;font-weight:bold;letter-spacing:4px;outline:none;background-color:transparent;border:2px solid var(--color-f-80);color:var(--color-f-80);position:absolute;padding:0;cursor:pointer;z-index:1;transition:all 0.24s linear;}.loading80{width:124px;height:46px;font-size:24px;font-weight:bold;letter-spacing:4px;background-color:transparent;position:absolute;left:-2px;overflow:hidden;cursor:pointer;z-index:0;opacity:0;transition:opacity 0.24s linear;}.p80{cursor:pointer;writing-mode:vertical-rl;letter-spacing:3px;font-size:12px;line-height:1;margin:0;padding:0;position:absolute;color:var(--color-f-80);--left-80:3px;--delay-80:0.1s;animation:eff80 0.6s linear infinite;}.i80{color:var(--color-s-80);}.i80-1{color:var(--color-t-80);}.p80:nth-child(1){left:var(--left-80);}.p80:nth-child(2){left:calc(var(--left-80) + 18px);animation-delay:var(--delay-80);}.p80:nth-child(3){left:calc(var(--left-80) + 18px * 2);animation-delay:calc(var(--delay-80)*2);}.p80:nth-child(4){left:calc(var(--left-80) + 18px * 3);}.p80:nth-child(5){left:calc(var(--left-80) + 18px * 4);animation-delay:calc(var(--delay-80)*4);}.p80:nth-child(6){left:calc(var(--left-80) + 18px * 5);animation-delay:calc(var(--delay-80)*3);}.p80:nth-child(7){left:calc(var(--left-80) + 18px * 6);}@keyframes eff80{0%{transform:translateY(-40%);}100%{transform:translateY(140%);}}.btn-box80:hover .btn80{text-shadow:0 2px 0 var(--color-s-80);box-shadow:2px 2px 0 var(--color-s-80),-2px -2px 0 var(--color-t-80);}.btn-box80:hover .loading80{opacity:1;background-color:#000000;}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='btn-box80'><button class='btn80'>HOVER</button><div class='loading80'><p class='p80'>4rs<span class='i80-1'>b</span>h<span class='i80'>k</span>r</p><p class='p80'>_7u<span class='i80'>i</span>90<span class='i80'>@</span>v</p><p class='p80'>_7,=<span class='i80-1'>j</span>ud<span class='i80'>i</span>y</p><p class='p80'>d8<span class='i80-1'>%</span>rg</p><p class='p80'><span class='i80'>d</span>oopd<span class='i80-1'>e</span>g</p><p class='p80'>c4*<span class='i80-1'>h</span>ld</p><p class='p80'>u<span class='i80'>g</span>_^43<span class='i80'>2</span>iu</p></div></div>"
 	}
 ]
