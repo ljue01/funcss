@@ -141,6 +141,12 @@ header{
 	text-align: center;
 	letter-spacing: 0.75rem;
 }
+.ads-box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 section{
 	margin-top: 5.125rem;
 }
