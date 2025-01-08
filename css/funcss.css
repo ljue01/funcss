@@ -9,8 +9,8 @@
 }
 .pop-icon{
 	position: fixed;
-	bottom: 7rem;
-	right: 3.5rem;
+	bottom: 1.5rem;
+	right: 1.5rem;
 	z-index: 99;
 	cursor: pointer;
 }
@@ -126,13 +126,14 @@ section{
 .ads-banner{
 	width: 100%;
 	position: relative;
-	padding: 0 2.75rem 1rem;
+	padding: 0 2.75rem 1.75rem;
 	box-sizing: border-box;
+	font-size: 0;
 }
 .banner-item{
 	width: 100%;
 	position: relative;
-	font-size: 0;
+	display: block;
 }
 .banner-item img{
 	width: 100%;
@@ -142,12 +143,12 @@ section{
 .tag{
 	display: flex;
 	justify-content: center;
-	margin-top: 1.375rem;
+	margin-top: 1.5rem;
 }
 .p-title{
-	font-size: 1.125rem;
+	font-size: 1rem;
 	font-weight: 700;
-	padding: 0 2rem;
+	padding: 0 1.25rem;
 	box-sizing: border-box;
 	position: relative;
 	cursor: pointer;
@@ -235,27 +236,67 @@ ul{
 }
 footer{
 	width: 100%;
-	font-size: 0.75rem;
 	position: relative;
 	box-sizing: border-box;
-	padding: 3.625rem 2rem 1.5rem;
+	padding: 6rem 2.75rem 1.5rem;
 	display: flex;
 	justify-content: space-between;
 }
 footer>section{
 	width: 50%;
 	margin: 0;
-}
-footer>section:first-child{
-	flex-wrap: wrap;
-	flex-direction: row;
+	display: flex;
+	flex-direction: column;
 }
 footer>section:last-child{
-	flex-direction: row-reverse;
-	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-end;
 }
-footer>section>*{
-	padding: 1.5rem;
+.footer-logo{
+	width: 68px;
+	height: 68px;
+	box-shadow: var(--title-shadow);
+	font-size: 0;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.footer-logo img{
+	width: 100%;
+}
+.footer-name{
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-top: 3rem;
+}
+.footer-media{
+	margin-top: 1.25rem;
+}
+.link-svg{
+	width: 1.25rem;
+	display: block;
+	margin-right: 1.25rem;
+	font-size: 0;
+}
+.link-svg img{
+	width: 100%;
+}
+.footer-info{
+	margin-right: 6.25rem;
+}
+.footer-info:last-child{
+	margin-right: 0;
+}
+.footer-info ul{
+	padding: 0;
+	flex-direction: column;
+}
+.footer-info-title{
+	font-size: 1rem;
+	font-weight: bold;
+	padding-bottom: 1rem;
+}
+.footer-info-li{
+	margin-top: 1rem;
 }
 .text-link{
 	color: var(--main-color);
@@ -406,13 +447,25 @@ footer>section>*{
 	section{
 		margin-top: 8rem;
 	}
+	footer>section:first-child{
+		width: 50%;
+	}
+	footer>section:last-child{
+		width: 50%;
+	}
+	.footer-info:first-child{
+		display: none;
+	}
+	footer{
+		padding: 6rem 1rem 1.5rem;
+	}
 	.ads-banner{
 		padding: 0 1rem 1rem;
 	}
 	.funcss-logo{
 		left: auto;
 	}
-	.tag,.see-code,footer section:last-child .text-link:nth-child(1),footer section:last-child .text-link:nth-child(2),.pop-icon{
+	.tag,.see-code,.pop-icon{
 		display: none;
 	}
 	ul{
@@ -422,29 +475,26 @@ footer>section>*{
 		width: 100%;
 		padding: 1rem 0.5rem;
 	}
-	footer{
-		padding: 1rem;
-	}
-	footer>section>*{
-		padding: 0.625rem;
-	}
-	footer section:first-child{
-		width: 50%;
-		line-height: 1.25rem;
-	}
-	footer section:last-child{
-		width: 30%;
-		line-height: 1.25rem;
+	.ads-banner{
+		padding: 0 1rem 1rem;
 	}
 }
-/** 自适应 **/
 @media screen and (min-width: 769px) and (max-width:960px){
+	footer>section:first-child{
+		width: 40%;
+	}
+	footer>section:last-child{
+		width: 60%;
+	}
+	.footer-info:first-child{
+		display: none;
+	}
+	.ads-banner{
+		padding: 0 2.75rem 1rem;
+	}
 	.item-box{
 		width: 50%;
 		padding: 1rem;
-	}
-	footer{
-		padding: 1.5rem 2rem;
 	}
 	.pop-cont, .pop-cont-2{
 		padding: 3.75rem;
@@ -475,12 +525,18 @@ footer>section>*{
 	}
 }
 @media screen and (min-width: 961px) and (max-width:1024px){
+	footer>section:first-child{
+		width: 30%;
+	}
+	footer>section:last-child{
+		width: 70%;
+	}
+	.ads-banner{
+		padding: 0 2.75rem 1rem;
+	}
 	.item-box{
 		width: 50%;
 		padding: 1rem;
-	}
-	footer{
-		padding: 1.5rem 2rem;
 	}
 	.pop-cont, .pop-cont-2{
 		padding: 3.75rem;
@@ -511,6 +567,15 @@ footer>section>*{
 	}
 }
 @media screen and (min-width: 1025px) and (max-width:1440px){
+	footer>section:first-child{
+		width: 30%;
+	}
+	footer>section:last-child{
+		width: 70%;
+	}
+	.ads-banner{
+		padding: 0 2.75rem 1rem;
+	}
 	.item-box{
 		width: 33.3333%;
 		padding: 1rem;

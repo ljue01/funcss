@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</transition>
-		<!-- <div v-if="pageLoad" class="page-load">
+		<div v-if="pageLoad" class="page-load">
 			<div class="text-load-box">
 				<span>F</span>
 				<span>U</span>
@@ -52,7 +52,7 @@
 				<span>S</span>
 				<span>S</span>
 			</div>
-		</div> -->
+		</div>
     <header class="flex">
 			<div class="funcss-logo">
 				<img src="img/funcss.webp" alt="funcss-logo" />
@@ -88,25 +88,47 @@
 			</section>
     </main>
 		<footer>
-			<!-- <section>
-				<div class="funcss-logo">
+			<section>
+				<div class="footer-logo">
 					<img src="img/funcss.webp" alt="funcss-logo" />
 				</div>
-			</section>
-			<section></section> -->
-			<section>
-				<span>funcss ©️ 2023</span>
-				<a class="text-link" target="_blank" href="https://beian.miit.gov.cn/">冀ICP备19017590号-1</a>
-				<span id="busuanzi_container_site_pv" style='display:none'>
-				    总访问量 <span id="busuanzi_value_site_pv"></span> 次
-				</span>
+				<div class="footer-name">FUNCSS - 有趣的CSS</div>
+				<div class="footer-media flex">
+					<a class="link-svg" href="https://gitee.com/ctrl-S/gitee-funcss" target="_blank">
+						<img src="https://cdnimg.liujueyi.cn/picgoimg/gitee.svg" alt="gitee">
+					</a>
+				</div>
 			</section>
 			<section>
-				<a class="text-link" href="javascript:;"  @click="top">回到顶部</a>
-				<a class="text-link" href="javascript:;"  @click="showLike">喜欢</a>
-				<a class="text-link" href="javascript:;"  @click="showAbout">关于</a>
-				<a class="text-link" href="https://whtool.liujueyi.cn/" target="_blank">WHTOOL</a>
-				<a class="text-link" href="https://appshare.liujueyi.cn/" target="_blank">APPSHARE</a>
+				<div class="footer-info">
+					<ul>
+						<li class="footer-info-title">Product Dev</li>
+						<li class="f14 footer-info-li"><a class="text-link" href="https://whtool.liujueyi.cn" target="_blank">WHTOOL - 宽高比例计算工具</a></li>
+						<li class="f14 footer-info-li"><a class="text-link" href="https://funcss.liujueyi.cn" target="_blank">FUNCSS - 有趣的CSS</a></li>
+						<li class="f14 footer-info-li"><a class="text-link" href="https://appshare.liujueyi.cn" target="_blank">APPSHARE - 设计师工作软件</a></li>
+						<li class="f14 footer-info-li"><a class="text-link" href="https://www.liujueyi.cn" target="_blank">设计师工作日常 - 个人博客</a></li>
+						<li class="f14 footer-info-li"><a class="text-link" href="https://liujueyi.cn/play/2048/2048game.html" target="_blank">2048 - 摸鱼小游戏网页版</a></li>
+						<li class="f14 footer-info-li"><a class="text-link" href="https://liujueyi.cn/play/vipvideo/vipvideo.html" target="_blank">视频解析工具 - 在线看VIP视频</a></li>
+					</ul>
+				</div>
+				<div class="footer-info">
+					<ul>
+						<li class="footer-info-title">About</li>
+						<li class="f14 footer-info-li">
+							<a class="text-link" href="javascript:;"  @click="showAbout">关于本站</a>
+						</li>
+						<li class="f14 footer-info-li">
+							<a class="text-link" href="javascript:;"  @click="showLike">赏个饼</a>
+						</li>
+						<li class="f14 footer-info-li">
+							<span id="busuanzi_container_site_pv" style='display:none'>
+							    总访问量 <span id="busuanzi_value_site_pv"></span> 次
+							</span>
+						</li>
+						<li class="f14 footer-info-li"><a class="text-link" target="_blank" href="https://beian.miit.gov.cn/">冀ICP备19017590号-1</a></li>
+						<li class="f14 footer-info-li"><span>funcss ©️ 2023-2025 All rights reserved.</span></li>
+					</ul>
+				</div>
 			</section>
 		</footer>
 		<transition :duration="400">
