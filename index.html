@@ -11,7 +11,6 @@
 	<link href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap"" rel="stylesheet">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/funcss.css">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227292961308738" crossorigin="anonymous"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XT1R2WL0G"></script>
@@ -44,7 +43,7 @@
 				</div>
 			</div>
 		</transition>
-		<div v-if="pageLoad" class="page-load">
+		<!-- <div v-if="pageLoad" class="page-load">
 			<div class="text-load-box">
 				<span>F</span>
 				<span>U</span>
@@ -53,38 +52,26 @@
 				<span>S</span>
 				<span>S</span>
 			</div>
-		</div>
-    <header>
-			<aside class="logo-aside">
-				<a class="logo-website" href="https://www.liujueyi.cn" target="_blank">
-					<span class="logo-img"><img src="https://liujueyi.cn/imgs/sjs-logo.webp" alt="设计师工作日常"></span>
-					<span class="logo-name">设计师工作日常</span>
-				</a>
-				<a class="gitee-ico" href="https://gitee.com/ctrl-S/gitee-funcss" target="_blank"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gitee</title><path d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.016 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.777c-.982 0-1.778.796-1.778 1.778v5.63c0 .327.266.592.593.592h5.63c.982 0 1.778-.796 1.778-1.778v-.296a.593.593 0 0 0-.592-.593h-4.15a.592.592 0 0 1-.592-.592v-1.482a.593.593 0 0 1 .593-.592h6.815c.327 0 .593.265.593.592v3.408a4 4 0 0 1-4 4H5.926a.593.593 0 0 1-.593-.593V9.778a4.444 4.444 0 0 1 4.445-4.444h8.296Z"/></svg> Gitee</a>
-			</aside>
-      <div class="head-title">有趣的CSS</div>
-			<div class="ads-box">
-				<!-- banner位 -->
-				<ins class="adsbygoogle"
-				     style="display:block"
-				     data-ad-client="ca-pub-7227292961308738"
-				     data-ad-slot="6849781745"
-				     data-ad-format="auto"
-				     data-full-width-responsive="true"></ins>
-				<script>
-				     (adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+		</div> -->
+    <header class="flex">
+			<div class="funcss-logo">
+				<img src="img/funcss.webp" alt="funcss-logo" />
+			</div>
+			<div class="tag">
+				<p class="p-title" :class="{'tag-sel': selectedType === ''}" @click="selectedType = ''">全部</p>
+				<p class="p-title" :class="{'tag-sel': selectedType === 0}" @click="selectedType = 0">按钮 / 链接</p>
+				<p class="p-title" :class="{'tag-sel': selectedType === 1}" @click="selectedType = 1">输入框</p>
+				<p class="p-title" :class="{'tag-sel': selectedType === 2}" @click="selectedType = 2">加载中</p>
+				<p class="p-title" :class="{'tag-sel': selectedType === 3}" @click="selectedType = 3">文字</p>
 			</div>
     </header>
     <main>
       <section>
-				<div class="tag">
-					<p class="p-title" :class="{'tag-sel': selectedType === ''}" @click="selectedType = ''">全部</p>
-					<p class="p-title" :class="{'tag-sel': selectedType === 0}" @click="selectedType = 0">按钮 / 链接</p>
-					<p class="p-title" :class="{'tag-sel': selectedType === 1}" @click="selectedType = 1">输入框</p>
-					<p class="p-title" :class="{'tag-sel': selectedType === 2}" @click="selectedType = 2">加载中</p>
-					<p class="p-title" :class="{'tag-sel': selectedType === 3}" @click="selectedType = 3">文字</p>
-				</div>
+				<aside class="ads-banner">
+					<a href="https://liujueyi.cn/share/share-1-1.html" class="banner-item" target="_blank">
+						<img src="https://cdnimg.liujueyi.cn/picgoimg/20250108124015837.webp" alt="机场推荐">
+					</a>
+				</aside>
 				<ul>
 					<li v-for="item in filteredItems" :key="item.id" class="item-box">
 						<div class="item-main">
@@ -101,6 +88,12 @@
 			</section>
     </main>
 		<footer>
+			<!-- <section>
+				<div class="funcss-logo">
+					<img src="img/funcss.webp" alt="funcss-logo" />
+				</div>
+			</section>
+			<section></section> -->
 			<section>
 				<span>funcss ©️ 2023</span>
 				<a class="text-link" target="_blank" href="https://beian.miit.gov.cn/">冀ICP备19017590号-1</a>

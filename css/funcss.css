@@ -98,67 +98,56 @@
 }
 header{
 	width: 100%;
-	padding: 9.75rem 0 4.625rem;
+	height: 72px;
+	background-color: var(--second-color);
+	position: fixed;
+	z-index: 10;
+	opacity: 0.9;
+	justify-content: center;
+	overflow: hidden;
 }
-.logo-aside{
-	width: 100%;
-	padding: 0 3.5rem;
+.funcss-logo{
+	width: 40px;
+	height: 40px;
+	box-shadow: var(--title-shadow);
+	font-size: 0;
 	position: absolute;
-	top: 3.5rem;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: space-between;
+	left: 2.75rem;
+	top: 1rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
 }
-.logo-website,.gitee-ico{
-	display: flex;
+.funcss-logo img{
+	width: 100%;
+}
+section{
+	margin-top: 10rem;
+}
+.ads-banner{
+	width: 100%;
 	position: relative;
-	align-items: center;
+	padding: 0 2.75rem 1rem;
+	box-sizing: border-box;
 }
-.logo-img{
-	width: 2.5rem;
+.banner-item{
+	width: 100%;
 	position: relative;
 	font-size: 0;
 }
-.logo-img img{
-  width: 100%;
-}
-.logo-name{
-	font-size: 1.125rem;
-	font-weight: bold;
-	margin-left: 1.25rem;
-}
-.gitee-ico svg{
-	width: 24px;
-	fill: #C71D23;
-	margin-right: 0.625rem;
-}
-.head-title{
+.banner-item img{
 	width: 100%;
-	font-size: 3rem;
-	font-weight: 900;
-	color: var(--second-color);	
-	text-shadow: var(--title-shadow);
-	text-align: center;
-	letter-spacing: 0.75rem;
-}
-.ads-box{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-section{
-	margin-top: 5.125rem;
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
 }
 .tag{
-	width: 100%;
 	display: flex;
 	justify-content: center;
+	margin-top: 1.375rem;
 }
 .p-title{
 	font-size: 1.125rem;
 	font-weight: 700;
-	padding: 0 2rem 1.25rem;
+	padding: 0 2rem;
 	box-sizing: border-box;
 	position: relative;
 	cursor: pointer;
@@ -414,15 +403,14 @@ footer>section>*{
 }
 /** 自适应 **/
 @media screen and (max-width:768px){
-	header{
-		padding: 9rem 0 0;
-	}
-	.logo-aside{
-		padding: 0 1rem;
-		top: 1rem;
-	}
 	section{
-		margin-top: 2rem;
+		margin-top: 8rem;
+	}
+	.ads-banner{
+		padding: 0 1rem 1rem;
+	}
+	.funcss-logo{
+		left: auto;
 	}
 	.tag,.see-code,footer section:last-child .text-link:nth-child(1),footer section:last-child .text-link:nth-child(2),.pop-icon{
 		display: none;
@@ -451,13 +439,6 @@ footer>section>*{
 }
 /** 自适应 **/
 @media screen and (min-width: 769px) and (max-width:960px){
-	header{
-		padding: 9rem 0 0;
-	}
-	.logo-aside{
-		padding: 0 2.75rem;
-		top: 2.75rem;
-	}
 	.item-box{
 		width: 50%;
 		padding: 1rem;
@@ -494,13 +475,6 @@ footer>section>*{
 	}
 }
 @media screen and (min-width: 961px) and (max-width:1024px){
-	header{
-		padding: 9rem 0 0;
-	}
-	.logo-aside{
-		padding: 0 2.75rem;
-		top: 2.75rem;
-	}
 	.item-box{
 		width: 50%;
 		padding: 1rem;
