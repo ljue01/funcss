@@ -297,6 +297,7 @@ footer>section:last-child{
 }
 .footer-info-li{
 	margin-top: 1rem;
+	opacity: 0.8;
 }
 .text-link{
 	color: var(--main-color);
@@ -453,9 +454,6 @@ footer>section:last-child{
 	footer>section:last-child{
 		width: 50%;
 	}
-	.footer-info:first-child{
-		display: none;
-	}
 	footer{
 		padding: 6rem 1rem 1.5rem;
 	}
@@ -465,7 +463,7 @@ footer>section:last-child{
 	.funcss-logo{
 		left: auto;
 	}
-	.tag,.see-code,.pop-icon{
+	.tag,.see-code,.pop-icon,.footer-info:first-child,.footer-name,.footer-media{
 		display: none;
 	}
 	ul{
