@@ -270,6 +270,7 @@ footer>section:last-child{
 }
 .footer-media{
 	margin-top: 1.25rem;
+	align-items: center;
 }
 .link-svg{
 	width: 1.25rem;
@@ -460,10 +461,13 @@ footer>section:last-child{
 	.ads-banner{
 		padding: 0 1rem 1rem;
 	}
+	.footer-media{
+		margin-top: 3rem;
+	}
 	.funcss-logo{
 		left: auto;
 	}
-	.tag,.see-code,.pop-icon,.footer-info:first-child,.footer-name,.footer-media{
+	.tag,.see-code,.pop-icon,.footer-info:first-child,.footer-name{
 		display: none;
 	}
 	ul{
