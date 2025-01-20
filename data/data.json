@@ -808,5 +808,41 @@
 		"style": "<style>.btn90{padding:10px 24px;border:2px solid #2951ff;outline:none;background-color:transparent;cursor:pointer;transform:skewX(-15deg);transition:all 0.2s linear;}.btn90::after{content:'BUTTON';font-size:18px;font-weight:bold;color:#2951ff;transition:all 0.2s linear;}.btn90:hover{background-color:#2951ff;transform:skewX(-20deg) translate(-4px,-4px);box-shadow:2px 2px 0 #fff,6px 6px 0 #000;}.btn90:hover::after{color:#ffffff;transform:translate(-3px,-3px);text-shadow:4px 4px 0 #000;}</style>",
 		"coder": "Just. Liu",
 		"code": "<button class='btn90'></button>"
+	},
+	{
+		"type": 2,
+		"id": 91,
+		"title": "流光边卡片块",
+		"link": "https://mp.weixin.qq.com/s/cLd3BJkOQ84oCHh0NQTKlA",
+		"style": "<style>.card91{width:240px;height:140px;position:relative;}.card-bg-box91{width:100%;height:100%;position:relative;border-radius:13px;overflow:hidden;}.card-bg91{width:340px;height:340px;background:linear-gradient(135deg,rgba(252, 165, 0, 1.0) 0%,rgba(242,231,36,0) 40%);top:-98px;left:-54px;position:absolute;animation:zhuan91 3s ease-in-out infinite;}@keyframes zhuan91{0%{rotate:0deg;}50%{rotate:180deg;}100%{rotate:360deg;}}.card-main91{width:100%;height:100%;padding:2px;position:absolute;left:0;top:0;z-index:10;box-sizing:border-box;}.card-content91{width:100%;height:100%;border-radius:11px;background-color:#d1d1d1;color:#000;display:flex;justify-content:center;align-items:center;}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='card91'><div class='card-bg-box91'><div class='card-bg91'></div></div><div class='card-main91'><div class='card-content91'>卡片自定义内容</div></div></div>"
+	},
+	{
+		"type": 0,
+		"id": 92,
+		"title": "简约文字风格导航栏",
+		"link": "https://mp.weixin.qq.com/s/jDhwWVIs9qDgDCOyKm8MGg",
+		"style": "<style>.nav92{height:32px;padding:4px;position:relative;overflow:hidden;display:flex;background-color:#eee;box-shadow:0 10px 10px -5px rgba(0,0,0,0.2);border-radius:20px;}.label92{cursor:pointer;}.label92 .inp92{display:none;}.nav-a92{width:88px;height:32px;line-height:32px;border-radius:16px;background-color:transparent;text-align:center;display:block;color:#3d3d3d;font-size:14px;text-decoration:none;transition:all 0.4s linear;}.nav-a92:hover{font-weight:bold;}.inp92:checked + .nav-a92{font-weight:bold;background-color:#ffffff;}</style>",
+		"coder": "Just. Liu",
+		"code": "<nav class='nav92'><label class='label92'><input id='sel91-1' class='inp92' type='radio' name='radio92' checked='' /><span class='nav-a92'>首页</span></label><label class='label92'><input id='sel91-2' class='inp92' type='radio' name='radio92' /><span class='nav-a92'>设计</span></label><label class='label92'><input id='sel91-3' class='inp92' type='radio' name='radio92'/><span class='nav-a92'>前端</span></label></nav>"
+	},
+	{
+		"type": 0,
+		"id": 93,
+		"title": "滑块动效导航栏",
+		"link": "https://mp.weixin.qq.com/s/giFDuUC5bYIr1Pe_XNvG8A",
+		"style": "<style>.nav93{height:32px;padding:12px;position:relative;overflow:hidden;display:flex;background-color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.2);border-radius:28px;}.nav93 input[name='radio93']{display:none;}.nav-tab93{width:68px;height:32px;line-height:32px;border-radius:16px;text-align:center;font-size:14px;font-weight:bold;color:#3d3d3d;background-color:transparent;transition:all 0.3s linear;cursor:pointer;z-index:2;}.nav-tab93:hover{transform:translateY(-1px);}.nav93 input[name='radio93']:checked + .nav-tab93{color:#45873c;}.slide93{width:68px;height:32px;line-height:32px;border-radius:16px;background-color:rgba(0,129,12,0.1);position:absolute;transition:all 0.3s linear;}#radio93-1:checked ~ .slide93{transform:translateX(0);}#radio93-2:checked ~ .slide93{transform:translateX(68px);}#radio93-3:checked ~ .slide93{transform:translateX(136px);}</style>",
+		"coder": "Just. Liu",
+		"code": "<nav class='nav93'><input type='radio' name='radio93' id='radio93-1' checked='' /><label for='radio93-1' class='nav-tab93'>首页</label><input type='radio' name='radio93' id='radio93-2' /><label for='radio93-2' class='nav-tab93'>设计</label><input type='radio' name='radio93' id='radio93-3' /><label for='radio93-3' class='nav-tab93'>前端</label><span class='slide93'></span></nav>"
+	},
+	{
+		"type": 3,
+		"id": 94,
+		"title": "多彩的文字效果",
+		"link": "https://mp.weixin.qq.com/s/qm1yUkntzLnFudwJjAxJdA",
+		"style": "<style>.text94{width:max-content;font-size:24px;font-weight:900;color:transparent;background-clip:text;-webkit-background-clip:text;background-image:linear-gradient(97deg,#0096FF,#BB64FF 42%,#F2416B 74%,#EB7500);}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='text94'>Hello World!</div>"
 	}
 ]
