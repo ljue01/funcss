@@ -1,6 +1,18 @@
 // by Just. Liu
 // v0.0.1
 
+// 谷歌广告启动脚本
+window['addAds'] = function(){
+		window.onload=function(){
+				let childList = document.getElementsByClassName('gads');
+				for (let i = 0; i < childList.length; i++) {
+						let insNode = childList[i].firstChild;
+						insNode.style.maxWidth = childList[i].clientWidth||childList[i].offsetWidth;
+						(adsbygoogle = window.adsbygoogle || []).push({});
+				}
+		}
+};
+
 const app = Vue.createApp({	
   data() {
     return {
@@ -24,6 +36,8 @@ const app = Vue.createApp({
 		setTimeout(() => {
 			this.pageLoad = false;
 		}, 5000);
+		// 启动谷歌广告
+		window.addAds();
 	},
 	computed: {
 		filteredCode() {
@@ -139,14 +153,14 @@ const app = Vue.createApp({
 				this.cssTip = false;
 			}, 2000); // 2秒后隐藏提示信息
 			
-		},
-		// 回到顶部
-		top(){
-			window.scrollTo({
-			        top:0,
-			        behavior:"smooth"
-			    })
 		}
+		// 回到顶部
+		// top(){
+		// 	window.scrollTo({
+		// 	        top:0,
+		// 	        behavior:"smooth"
+		// 	    })
+		// }
   }
 })
 
