@@ -2,6 +2,7 @@
 	{
 		"type": 2,
 	  "id": 1,
+		"setbg": 1,
 	  "title": "好看的呼吸灯效果",
 		"link": "https://mp.weixin.qq.com/s/muCIhoLC43Ac1qSicdyeIQ",
 		"style": "<style>span{width:20px;height:20px;margin:10px;border-radius:50%;display:block;}.red{animation:just1 2s ease-in-out infinite alternate;}.green{animation:just2 3s ease-in-out infinite alternate;}.blue{animation:just3 4s ease-in-out infinite alternate;}@keyframes just1{0%{border:5px solid rgba(255,0,0,0);box-shadow:0 0 0 rgba(255,0,0,0),0 0 0 rgba(255,0,0,0) inset;}100%{border:5px solid rgba(255,0,0,1);box-shadow:0 0 10px rgba(255,0,0,0.7),0 0 4px rgba(255,0,0,0.5) inset;}}@keyframes just2{0%{border:5px solid rgba(0,255,0,0);box-shadow:0 0 0 rgba(0,255,0,0),0 0 0 rgba(0,255,0,0) inset;}100%{border:5px solid rgba(0,255,0,1);box-shadow:0 0 10px rgba(0,255,0,0.7),0 0 4px rgba(0,255,0,0.5) inset;}}@keyframes just3{0%{border:5px solid rgba(0,0,255,0);box-shadow:0 0 0 rgba(0,0,255,0),0 0 0 rgba(0,0,255,0) inset;}100%{border:5px solid rgba(0,0,255,1);box-shadow:0 0 10px rgba(0,0,255,0.7),0 0 4px rgba(0,0,255,0.5) inset;}}</style>",
@@ -461,6 +462,7 @@
 	{
 		"type": 2,
 		"id": 52,
+		"setbg": 1,
 		"title": "好看的晶体悬浮效果",
 		"link": "https://mp.weixin.qq.com/s/oqblKTFCmk0K--_a4FB5pA",
 		"style": "<style>.cube-box52{width:200px;height:200px;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;transform-style:preserve-3d;transform:rotateX(-10deg);}.cube-box52:after,.cube-box52:before{content:'';width:2px;height:40px;position:absolute;left:40px;background:linear-gradient(180deg,rgba(4,222,248,0.7) 0%,rgba(127,255,212,0) 100%);animation:movetop52 4s linear infinite;}.cube-box52:before{left:160px;background:linear-gradient(180deg,rgba(255,225,33,0.7) 0%,rgba(255,225,33,0) 100%);animation-delay:2s;}@keyframes movetop52{0%{bottom:0px;}100%{bottom:200px;height:0;}}.cube52{width:100px;height:70px;display:flex;justify-content:center;align-items:center;transform-style:preserve-3d;animation:spin52 4s linear infinite;}@keyframes spin52{0{transform:translateY(0px) rotateY(0deg);}50%{transform:translateY(-10px) rotateY(180deg);}100%{transform:translateY(0px) rotateY(360deg);}}.cube52 > div{width:70px;height:70px;clip-path:polygon(50% 0%,0 100%,100% 100%);background:conic-gradient(from 180deg at 50% 50%,#7FFFD4 0deg,#045AF8 59deg,#EA04F8 149deg,#FFE121 219deg,#04DEF8 301deg,#7FFFD4 360deg);position:absolute;transform-origin:center top;}.cube52 div:nth-of-type(1){background-color:rgba(4,222,248,0.7);transform:rotateZ(-30deg) rotateY(90deg);}.cube52 div:nth-of-type(2){background-color:rgba(234,4,248,0.7);transform:rotateZ(30deg) rotateY(90deg);}.cube52 div:nth-of-type(3){background-color:rgba(127,255,212,0.7);transform:rotateX(30deg);}.cube52 div:nth-of-type(4){background-color:rgba(4,90,248,0.7);transform:rotateX(-30deg);}.cube52 div:nth-of-type(5){clip-path:none;background-color:rgba(255,225,33,0.7);transform:rotateX(90deg) translateY(-35px) translateZ(-60px);}.cube-box52 .cube52:nth-of-type(2){transform:rotateX(180deg);animation:spin52b 4s linear infinite;}@keyframes spin52b{0{transform:rotateX(180deg) translateY(0px) rotateY(0deg);}50%{transform:rotateX(180deg) translateY(-10px) rotateY(180deg);}100%{transform:rotateX(180deg) translateY(0px) rotateY(360deg);}}</style>",
@@ -731,9 +733,10 @@
 	{
 		"type": 2,
 		"id": 82,
+		"setbg": 1,
 		"title": "圆形渐变光晕动效",
 		"link": "https://mp.weixin.qq.com/s/s0wh5vBeDfvhxSlfs2DOFg",
-		"style": "<style>.light-round82{width:120px;height:120px;border-radius:50%;position:relative;background-image:linear-gradient(0deg,#FA8BFF 20%,#2BFF88 80%);box-shadow:0 4px 20px #FA8BFF,0 -4px 20px #2BFF88;filter:blur(2px);display:flex;justify-content:center;align-items:center;animation:eff82 2s linear infinite;}.light-round82:after{content:'';width:112px;height:112px;border-radius:50%;background-color:#d1d1d1;position:absolute;filter:blur(8px);}@keyframes eff82{to{transform:rotate(360deg);}}</style>",
+		"style": "<style>.light-round82{width:120px;height:120px;border-radius:50%;position:relative;background-image:linear-gradient(0deg,#FA8BFF 20%,#2BFF88 80%);box-shadow:0 4px 20px #FA8BFF,0 -4px 20px #2BFF88;filter:blur(2px);display:flex;justify-content:center;align-items:center;animation:eff82 2s linear infinite;}.light-round82:after{content:'';width:112px;height:112px;border-radius:50%;background-color:#222;position:absolute;filter:blur(8px);}@keyframes eff82{to{transform:rotate(360deg);}}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='light-round82'></div>"
 	},
@@ -812,9 +815,10 @@
 	{
 		"type": 2,
 		"id": 91,
+		"setbg": 1,
 		"title": "流光边卡片块",
 		"link": "https://mp.weixin.qq.com/s/cLd3BJkOQ84oCHh0NQTKlA",
-		"style": "<style>.card91{width:240px;height:140px;position:relative;}.card-bg-box91{width:100%;height:100%;position:relative;border-radius:13px;overflow:hidden;}.card-bg91{width:340px;height:340px;background:linear-gradient(135deg,rgba(252, 165, 0, 1.0) 0%,rgba(242,231,36,0) 40%);top:-98px;left:-54px;position:absolute;animation:zhuan91 3s ease-in-out infinite;}@keyframes zhuan91{0%{rotate:0deg;}50%{rotate:180deg;}100%{rotate:360deg;}}.card-main91{width:100%;height:100%;padding:2px;position:absolute;left:0;top:0;z-index:10;box-sizing:border-box;}.card-content91{width:100%;height:100%;border-radius:11px;background-color:#d1d1d1;color:#000;display:flex;justify-content:center;align-items:center;}</style>",
+		"style": "<style>.card91{width:240px;height:140px;position:relative;}.card-bg-box91{width:100%;height:100%;position:relative;border-radius:13px;overflow:hidden;}.card-bg91{width:340px;height:340px;background:linear-gradient(135deg,rgba(252, 165, 0, 1.0) 0%,rgba(242,231,36,0) 40%);top:-98px;left:-54px;position:absolute;animation:zhuan91 3s ease-in-out infinite;}@keyframes zhuan91{0%{rotate:0deg;}50%{rotate:180deg;}100%{rotate:360deg;}}.card-main91{width:100%;height:100%;padding:2px;position:absolute;left:0;top:0;z-index:10;box-sizing:border-box;}.card-content91{width:100%;height:100%;border-radius:11px;background-color:#222;color:#fff;display:flex;justify-content:center;align-items:center;}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='card91'><div class='card-bg-box91'><div class='card-bg91'></div></div><div class='card-main91'><div class='card-content91'>卡片自定义内容</div></div></div>"
 	},
@@ -844,5 +848,62 @@
 		"style": "<style>.text94{width:max-content;font-size:24px;font-weight:900;color:transparent;background-clip:text;-webkit-background-clip:text;background-image:linear-gradient(97deg,#0096FF,#BB64FF 42%,#F2416B 74%,#EB7500);}</style>",
 		"coder": "Just. Liu",
 		"code": "<div class='text94'>Hello World!</div>"
+	},
+	{
+		"type": 0,
+		"id": 95,
+		"title": "旋转的圆环按钮",
+		"link": "https://mp.weixin.qq.com/s/APVRTllXDAlgRxKwpepeuA",
+		"style": "<style>.btn95{width:100px;height:100px;background-color:#0096FF;position:relative;border-radius:50%;display:flex;justify-content:center;align-items:center;overflow:hidden;cursor:pointer;transition:all .3s linear;}.text-box95{position:absolute;display:flex;justify-content:center;align-items:center;animation:text-eff95 9s linear infinite;}@keyframes text-eff95{to{rotate:-360deg;}}.span95{position:absolute;color:#ffffff;font-size:14px;font-weight:700;}.span95:nth-of-type(1){transform:rotate(calc(40deg * 0)) translate(0,-34px);}.span95:nth-of-type(2){transform:rotate(calc(40deg * 1)) translate(0,-34px);}.span95:nth-of-type(3){transform:rotate(calc(40deg * 2)) translate(0,-34px);}.span95:nth-of-type(4){transform:rotate(calc(40deg * 3)) translate(0,-34px);}.span95:nth-of-type(5){transform:rotate(calc(40deg * 4)) translate(0,-34px);}.span95:nth-of-type(6){transform:rotate(calc(40deg * 5)) translate(0,-34px);}.span95:nth-of-type(7){transform:rotate(calc(40deg * 6)) translate(0,-34px);}.span95:nth-of-type(8){transform:rotate(calc(40deg * 7)) translate(0,-34px);}.span95:nth-of-type(9){transform:rotate(calc(40deg * 8)) translate(0,-34px);}.circle95{position:absolute;width:40px;height:40px;border-radius:50%;background-color:#ffffff;display:flex;justify-content:center;align-items:center;transition:all .3s linear;}.triangle95{position:absolute;top:8px;left:11px;width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:20px solid #0096FF;transform:rotate(45deg);transition:all .3s linear;}.triangle95-2{position:absolute;top:19px;left:6px;width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:8px solid #ffffff;transform:rotate(45deg);}.btn95:hover .circle95{transform:rotate(45deg);}.btn95:hover .triangle95{border-bottom:20px solid #BB64FF;}.btn95:hover{background-color:#BB64FF;}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='btn95'><div class='text-box95'><span class='span95'></span><span class='span95'>🫓</span><span class='span95'>设</span><span class='span95'>计</span><span class='span95'>师</span><span class='span95'>工</span><span class='span95'>作</span><span class='span95'>日</span><span class='span95'>常</span></div><div class='circle95'><span class='triangle95'></span><span class='triangle95-2'></span></div></div>"
+	},
+	{
+		"type": 0,
+		"id": 96,
+		"setbg": 1,
+		"title": "黑色质感科技开关",
+		"link": "https://mp.weixin.qq.com/s/1D2cjpHccSXg5BAdLfsugQ",
+		"style": "<style>.app{width:100%;height:100vh;background-color:#222;position:relative;display:flex;justify-content:center;align-items:center;}.label96{width:40px;height:90px;position:relative;cursor:pointer;}.inp96{display:none;}.check-span96{width:100%;height:100%;display:block;background-color:#0d0d0d;border:2px solid #000;box-sizing:border-box;border-radius:5px;position:relative;}.switch96-box{width:32px;height:50px;position:absolute;top:2px;left:2px;border-radius:3px;background:linear-gradient(to bottom,#333333,#242323);box-shadow:0 0 4px 2px rgba(255,0,0,0.1);display:flex;justify-content:center;transition:all 0.4s cubic-bezier(0.99,0.1,0.1,0.99);}.light96{width:3px;height:3px;border-radius:50%;background-color:rgba(250,10,10,1);border:1px solid #222;box-shadow:0 0 8px 1px rgba(250,10,10,1);position:absolute;top:12px;transition:all 0.4s cubic-bezier(0.99,0.1,0.1,0.99);}.line96{width:24px;height:2px;background-color:#202020ea;box-shadow:0 -1px 1px rgba(255,255,255,0.2),0 1px 1px rgba(0,0,0,1);position:absolute;top:28px;}.line96:last-child{top:36px;}.inp96:checked + .check-span96 .switch96-box{top:34px;box-shadow:0 0 4px 2px rgba(0,250,0,0.1);}.inp96:checked + .check-span96 .switch96-box .light96{background-color:rgba(0,250,10,1);box-shadow:0 0 8px 1px rgba(0,250,10,1);}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label96'><input class='inp96'type='checkbox'><span class='check-span96'><span class='switch96-box'><span class='light96'></span><span class='line96'></span><span class='line96'></span></span></span></label>"
+	},
+	{
+		"type": 2,
+		"id": 97,
+		"title": "正在充电状态",
+		"link": "https://mp.weixin.qq.com/s/ZAF7IarF-xtUI41TFcvGcg",
+		"style": "<style>.loading97{width:64px;height:32px;position:relative;box-sizing:border-box;}.power-box97{width:60px;height:32px;position:absolute;border:2px solid #222;border-radius:9px;box-sizing:border-box;}.power-box97:before{content:'';width:50px;height:22px;position:absolute;top:3px;left:3px;border-radius:5px;z-index:5;animation:power-eff97 10s linear infinite;}.power-box97:after{content:'';width:2px;height:10px;background-color:#222;position:absolute;right:-6px;top:9px;}@keyframes power-eff97{0%{width:1px;background-color:#f00;}19%{width:10px;background-color:#f00;}20%{width:10px;background-color:#f7b530;}69%{width:34px;background-color:#f7b530;}70%{width:34px;background-color:#00cb00;}100%{width:50px;background-color:#00cb00;}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='loading97'><div class='power-box97'></div></div>"
+	},
+	{
+		"type": 0,
+		"id": 98,
+		"setbg": 1,
+		"title": "多选立体标签按钮",
+		"link": "https://mp.weixin.qq.com/s/coYBqNnQoiKLeDhEZwrudg",
+		"style": "<style>.label98{width:fit-content;position:relative;margin:0 5px;}.input98{display:none;}.btn-box98{width:fit-content;display:flex;background-color:rgba(0,0,0,0.1);border-radius:5px;box-shadow:inset 0px 2px 1px rgba(0,0,0,0.2),0px 1px 1px rgba(255,255,255,0.2);transition:all 0.3s cubic-bezier(0.25,0.8,0.2,1);cursor:pointer;}.text98{padding:3px 10px;font-size:18px;font-weight:700;color:rgba(255,255,255,0.8);}.btn-box98:hover{background-color:rgba(50,50,50,1);box-shadow:inset 0px -2px 1px rgba(0,0,0,0.4),0px 2px 4px 1px rgba(0,0,0,0.4),0px -1px 1px rgba(255,255,255,0.2);transform:translateY(-2px);}.btn-box98:hover .text98{color:#fff;}.input98:checked + .btn-box98{background-color:#09a641;box-shadow:inset 0px -2px 1px rgba(0,0,0,0.4),0px 2px 4px 1px rgba(0,0,0,0.2),0px -1px 1px rgba(255,255,255,0.2);transform:translateY(-2px);}.input98:checked + .btn-box98 .text98{color:#fff;}.input98:checked + .btn-box98:hover{background-color:#00b62e;}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label98'><input type='checkbox'class='input98'/><div class='btn-box98'><div class='text98'>HTML</div></div></label><label class='label98'><input type='checkbox'class='input98'/><div class='btn-box98'><div class='text98'>CSS</div></div></label><label class='label98'><input type='checkbox'class='input98'/><div class='btn-box98'><div class='text98'>Vue</div></div></label>"
+	},
+	{
+		"type": 2,
+		"id": 99,
+		"setbg": 1,
+		"title": "好玩的黑洞效果",
+		"link": "https://mp.weixin.qq.com/s/fMu4e57uJG5EUgZJJtbfww",
+		"style": "<style>.hole99{display:flex;align-items:center;justify-content:center;}.span99{width:50px;height:50px;border-radius:50%;opacity:0;display:block;position:absolute;animation:hole-eff99 3s linear infinite;}.span99:nth-child(1){animation-delay:0.3s;}.span99:nth-child(2){animation-delay:0.6s;}.span99:nth-child(3){animation-delay:0.9s;}.span99:nth-child(4){animation-delay:1.2s;}.span99:nth-child(5){animation-delay:1.5s;}.span99:nth-child(6){animation-delay:1.8s;}.span99:nth-child(7){animation-delay:2.1s;}.span99:nth-child(8){animation-delay:2.4s;}.span99:nth-child(9){animation-delay:2.7s;}.span99:nth-child(10){animation-delay:3s;}@keyframes hole-eff99{0%{transform:scale(2);opacity:0;box-shadow:0px 0px 50px rgba(255,255,255,0.5);}50%{transform:scale(1) translate(0px,-5px);opacity:1;box-shadow:0px 8px 20px rgba(255,255,255,0.5);}100%{transform:scale(0.1) translate(0px,5px);opacity:0;box-shadow:0px 10px 20px rgba(255,255,255,0);}}</style>",
+		"coder": "Just. Liu",
+		"code": "<div class='hole99'><span class='span99'></span><span class='span99'></span><span class='span99'></span><span class='span99'></span><span class='span99'></span><span class='span99'></span><span class='span99'></span><span class='span99'></span><span class='span99'></span><span class='span99'></span></div>"
+	},
+	{
+		"type": 1,
+		"id": 100,
+		"title": "绿色邮筒口动态输入框",
+		"link": "https://mp.weixin.qq.com/s/Q8DZFDzBP8Np-4NwLckOHg",
+		"style": "<style>.label100{width:180px;height:30px;outline:6px solid #008839;background-color:#00712a;position:relative;display:flex;justify-content:center;align-items:center;cursor:pointer;}.inp100{padding:0;width:178px;height:0;line-height:28px;font-size:16px;font-weight:bold;color:#008839;background-color:#9bc898;border:none;outline:none;text-align:center;transition:all 0.3s ease-in-out;cursor:text;}.inp100::-webkit-input-placeholder{color:#008839;}.inp100:hover,.inp100:focus,.inp100:valid{height:28px;}</style>",
+		"coder": "Just. Liu",
+		"code": "<label class='label100'><input type='text' class='inp100' placeholder='邮筒投递口' required /></label>"
 	}
 ]

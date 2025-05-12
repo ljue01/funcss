@@ -92,12 +92,12 @@
 					<li v-for="item in filteredItems" :key="item.id" class="item-box">
 						<div class="item-main">
 							<!-- <emoji-reaction availableArrayString="👍,thumbs-up;🎉,party-popper;🚀,rocket;" class="emoji" :reacttargetid="item.id"></emoji-reaction> -->
-							<div class="item-cont">
+							<div class="item-cont" :class="{'bg': item.setbg === 1}">
 								<span v-html="LocationStyle(item.style,item.id)"></span>
 								<span :class="'cs'+item.id" v-html="item.code"></span>
 							</div>
-							<a class="see-content" :href="item.link" target="_blank">代码详解</a>
-							<a class="see-code" href="javascript:;" @click="showPopup(item)">查看代码</a>
+							<a class="see-content" :class="{'color-w': item.setbg === 1}" :href="item.link" target="_blank">代码详解</a>
+							<a class="see-code" :class="{'color-w': item.setbg === 1}" href="javascript:;" @click="showPopup(item)">查看代码</a>
 						</div>
 					</li>
 				</ul>
@@ -157,8 +157,8 @@
 			<div v-if="show" class="pop-cont"  @click="hidePopup">
 				<div class="pop-main" @click.stop>
 					<div class="pop-left">
-						<div class="popup-box">
-							<div class="popup-title flex">
+						<div class="popup-box" :class="{'bg': popupItem.setbg === 1}">
+							<div class="popup-title flex" :class="{'color-w': popupItem.setbg === 1}">
 								<div>{{popupItem.title}}</div>
 								<div>by {{popupItem.coder}}</div>
 							</div>

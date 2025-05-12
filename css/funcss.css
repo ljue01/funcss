@@ -208,6 +208,9 @@ ul{
 	align-items: center;
 	overflow: hidden;
 }
+.bg{
+	background-color: #222;
+}
 .see-code{
 	font-size: 0.75rem;
 	font-weight: 900;
@@ -225,6 +228,9 @@ ul{
 	bottom: 1.5rem;
 	z-index: 10;
 	opacity: 0;	
+}
+.color-w{
+	color: #fff;
 }
 .item-main:hover .see-code,.item-main:hover .see-content{
 	opacity: 1;
